@@ -1,0 +1,35 @@
+Exp name: Waveglove_m-All_even-[0]-noise0-temp-epoch150-lr0.001-bsize64-ts_ws130_ov0
+
+Hyperparameters:
+Batch Size: 64
+Epochs: 150
+Learning Rate: 0.001
+Window Size: 130
+Overlap: 0
+Data Type: Waveglove_m
+Condition: All_even
+Test Condition: [0]
+Label Column: y
+Dim Type: time_domain
+Log Time: 2025-02-11_22-53-29
+
+Final Test Loss: 0.0849
+Final Test Accuracy: 99.10%
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       156
+           1       0.99      0.99      0.99       156
+           2       1.00      0.99      0.99       156
+           3       0.98      0.98      0.98       156
+           4       0.99      1.00      1.00       156
+           5       0.98      0.97      0.98       156
+           6       0.99      1.00      1.00       156
+           7       0.99      0.99      0.99       156
+           8       1.00      1.00      1.00       156
+           9       0.99      0.99      0.99       156
+
+    accuracy                           0.99      1560
+   macro avg       0.99      0.99      0.99      1560
+weighted avg       0.99      0.99      0.99      1560

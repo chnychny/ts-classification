@@ -1,0 +1,1561 @@
+,sample_idx,segment_idx,start_idx,end_idx,y_idx,y,stratification_label
+0,3159,0,0,130,6,grab,grab
+1,7571,0,0,130,6,grab,grab
+2,7678,0,0,130,6,grab,grab
+3,4441,0,0,130,6,grab,grab
+4,7677,0,0,130,6,grab,grab
+5,1101,0,0,130,6,grab,grab
+6,5989,0,0,130,6,grab,grab
+7,7324,0,0,130,6,grab,grab
+8,7141,0,0,130,6,grab,grab
+9,408,0,0,130,6,grab,grab
+10,1669,0,0,130,6,grab,grab
+11,8576,0,0,130,6,grab,grab
+12,7912,0,0,130,6,grab,grab
+13,2722,0,0,130,6,grab,grab
+14,3637,0,0,130,6,grab,grab
+15,1259,0,0,130,6,grab,grab
+16,5229,0,0,130,6,grab,grab
+17,1475,0,0,130,6,grab,grab
+18,7997,0,0,130,6,grab,grab
+19,4773,0,0,130,6,grab,grab
+20,5534,0,0,130,6,grab,grab
+21,4162,0,0,130,6,grab,grab
+22,6485,0,0,130,6,grab,grab
+23,6550,0,0,130,6,grab,grab
+24,9840,0,0,130,6,grab,grab
+25,8393,0,0,130,6,grab,grab
+26,9745,0,0,130,6,grab,grab
+27,9395,0,0,130,6,grab,grab
+28,2527,0,0,130,6,grab,grab
+29,4089,0,0,130,6,grab,grab
+30,2978,0,0,130,6,grab,grab
+31,4643,0,0,130,6,grab,grab
+32,972,0,0,130,6,grab,grab
+33,4739,0,0,130,6,grab,grab
+34,8109,0,0,130,6,grab,grab
+35,4302,0,0,130,6,grab,grab
+36,9797,0,0,130,6,grab,grab
+37,536,0,0,130,6,grab,grab
+38,3729,0,0,130,6,grab,grab
+39,6229,0,0,130,6,grab,grab
+40,5611,0,0,130,6,grab,grab
+41,6768,0,0,130,6,grab,grab
+42,8807,0,0,130,6,grab,grab
+43,5928,0,0,130,6,grab,grab
+44,73,0,0,130,6,grab,grab
+45,185,0,0,130,6,grab,grab
+46,6268,0,0,130,6,grab,grab
+47,5058,0,0,130,6,grab,grab
+48,3017,0,0,130,6,grab,grab
+49,3256,0,0,130,6,grab,grab
+50,4387,0,0,130,6,grab,grab
+51,8481,0,0,130,6,grab,grab
+52,7586,0,0,130,6,grab,grab
+53,3190,0,0,130,6,grab,grab
+54,9530,0,0,130,6,grab,grab
+55,72,0,0,130,6,grab,grab
+56,7243,0,0,130,6,grab,grab
+57,9309,0,0,130,6,grab,grab
+58,3587,0,0,130,6,grab,grab
+59,3257,0,0,130,6,grab,grab
+60,130,0,0,130,6,grab,grab
+61,5632,0,0,130,6,grab,grab
+62,5612,0,0,130,6,grab,grab
+63,7165,0,0,130,6,grab,grab
+64,5316,0,0,130,6,grab,grab
+65,6149,0,0,130,6,grab,grab
+66,5116,0,0,130,6,grab,grab
+67,3731,0,0,130,6,grab,grab
+68,34,0,0,130,6,grab,grab
+69,3730,0,0,130,6,grab,grab
+70,3858,0,0,130,6,grab,grab
+71,7742,0,0,130,6,grab,grab
+72,1071,0,0,130,6,grab,grab
+73,225,0,0,130,6,grab,grab
+74,4796,0,0,130,6,grab,grab
+75,6077,0,0,130,6,grab,grab
+76,6528,0,0,130,6,grab,grab
+77,7996,0,0,130,6,grab,grab
+78,6999,0,0,130,6,grab,grab
+79,183,0,0,130,6,grab,grab
+80,9461,0,0,130,6,grab,grab
+81,3132,0,0,130,6,grab,grab
+82,9529,0,0,130,6,grab,grab
+83,8929,0,0,130,6,grab,grab
+84,4226,0,0,130,6,grab,grab
+85,2526,0,0,130,6,grab,grab
+86,7323,0,0,130,6,grab,grab
+87,6317,0,0,130,6,grab,grab
+88,9611,0,0,130,6,grab,grab
+89,2723,0,0,130,6,grab,grab
+90,1741,0,0,130,6,grab,grab
+91,4440,0,0,130,6,grab,grab
+92,1938,0,0,130,6,grab,grab
+93,6740,0,0,130,6,grab,grab
+94,589,0,0,130,6,grab,grab
+95,1324,0,0,130,6,grab,grab
+96,4521,0,0,130,6,grab,grab
+97,4345,0,0,130,6,grab,grab
+98,8805,0,0,130,6,grab,grab
+99,8780,0,0,130,6,grab,grab
+100,3974,0,0,130,6,grab,grab
+101,8323,0,0,130,6,grab,grab
+102,7569,0,0,130,6,grab,grab
+103,9959,0,0,130,6,grab,grab
+104,8132,0,0,130,6,grab,grab
+105,4037,0,0,130,6,grab,grab
+106,4889,0,0,130,6,grab,grab
+107,872,0,0,130,6,grab,grab
+108,1518,0,0,130,6,grab,grab
+109,7883,0,0,130,6,grab,grab
+110,1520,0,0,130,6,grab,grab
+111,1825,0,0,130,6,grab,grab
+112,6664,0,0,130,6,grab,grab
+113,3016,0,0,130,6,grab,grab
+114,2102,0,0,130,6,grab,grab
+115,1990,0,0,130,6,grab,grab
+116,973,0,0,130,6,grab,grab
+117,8865,0,0,130,6,grab,grab
+118,5551,0,0,130,6,grab,grab
+119,6277,0,0,130,6,grab,grab
+120,9610,0,0,130,6,grab,grab
+121,5792,0,0,130,6,grab,grab
+122,8750,0,0,130,6,grab,grab
+123,5420,0,0,130,6,grab,grab
+124,2680,0,0,130,6,grab,grab
+125,6039,0,0,130,6,grab,grab
+126,1072,0,0,130,6,grab,grab
+127,7164,0,0,130,6,grab,grab
+128,344,0,0,130,6,grab,grab
+129,5707,0,0,130,6,grab,grab
+130,3306,0,0,130,6,grab,grab
+131,4775,0,0,130,6,grab,grab
+132,2006,0,0,130,6,grab,grab
+133,5881,0,0,130,6,grab,grab
+134,10040,0,0,130,6,grab,grab
+135,2367,0,0,130,6,grab,grab
+136,4270,0,0,130,6,grab,grab
+137,3506,0,0,130,6,grab,grab
+138,9568,0,0,130,6,grab,grab
+139,255,0,0,130,6,grab,grab
+140,1740,0,0,130,6,grab,grab
+141,3976,0,0,130,6,grab,grab
+142,9047,0,0,130,6,grab,grab
+143,6455,0,0,130,6,grab,grab
+144,8200,0,0,130,6,grab,grab
+145,5486,0,0,130,6,grab,grab
+146,9906,0,0,130,6,grab,grab
+147,2528,0,0,130,6,grab,grab
+148,1103,0,0,130,6,grab,grab
+149,7635,0,0,130,6,grab,grab
+150,588,0,0,130,6,grab,grab
+151,3133,0,0,130,6,grab,grab
+152,6918,0,0,130,6,grab,grab
+153,1792,0,0,130,6,grab,grab
+154,1545,0,0,130,6,grab,grab
+155,5880,0,0,130,6,grab,grab
+156,3763,0,0,130,1,hand swipe left,hand swipe left
+157,8426,0,0,130,1,hand swipe left,hand swipe left
+158,6143,0,0,130,1,hand swipe left,hand swipe left
+159,9406,0,0,130,1,hand swipe left,hand swipe left
+160,5140,0,0,130,1,hand swipe left,hand swipe left
+161,2643,0,0,130,1,hand swipe left,hand swipe left
+162,4847,0,0,130,1,hand swipe left,hand swipe left
+163,8381,0,0,130,1,hand swipe left,hand swipe left
+164,2530,0,0,130,1,hand swipe left,hand swipe left
+165,4316,0,0,130,1,hand swipe left,hand swipe left
+166,3540,0,0,130,1,hand swipe left,hand swipe left
+167,8313,0,0,130,1,hand swipe left,hand swipe left
+168,6582,0,0,130,1,hand swipe left,hand swipe left
+169,2843,0,0,130,1,hand swipe left,hand swipe left
+170,8825,0,0,130,1,hand swipe left,hand swipe left
+171,8456,0,0,130,1,hand swipe left,hand swipe left
+172,1484,0,0,130,1,hand swipe left,hand swipe left
+173,5635,0,0,130,1,hand swipe left,hand swipe left
+174,6427,0,0,130,1,hand swipe left,hand swipe left
+175,5141,0,0,130,1,hand swipe left,hand swipe left
+176,801,0,0,130,1,hand swipe left,hand swipe left
+177,510,0,0,130,1,hand swipe left,hand swipe left
+178,3739,0,0,130,1,hand swipe left,hand swipe left
+179,4196,0,0,130,1,hand swipe left,hand swipe left
+180,9522,0,0,130,1,hand swipe left,hand swipe left
+181,3453,0,0,130,1,hand swipe left,hand swipe left
+182,210,0,0,130,1,hand swipe left,hand swipe left
+183,9555,0,0,130,1,hand swipe left,hand swipe left
+184,9474,0,0,130,1,hand swipe left,hand swipe left
+185,7806,0,0,130,1,hand swipe left,hand swipe left
+186,7954,0,0,130,1,hand swipe left,hand swipe left
+187,6718,0,0,130,1,hand swipe left,hand swipe left
+188,7858,0,0,130,1,hand swipe left,hand swipe left
+189,6235,0,0,130,1,hand swipe left,hand swipe left
+190,4379,0,0,130,1,hand swipe left,hand swipe left
+191,2217,0,0,130,1,hand swipe left,hand swipe left
+192,2243,0,0,130,1,hand swipe left,hand swipe left
+193,8033,0,0,130,1,hand swipe left,hand swipe left
+194,9905,0,0,130,1,hand swipe left,hand swipe left
+195,7032,0,0,130,1,hand swipe left,hand swipe left
+196,16,0,0,130,1,hand swipe left,hand swipe left
+197,4892,0,0,130,1,hand swipe left,hand swipe left
+198,4688,0,0,130,1,hand swipe left,hand swipe left
+199,8362,0,0,130,1,hand swipe left,hand swipe left
+200,8085,0,0,130,1,hand swipe left,hand swipe left
+201,9148,0,0,130,1,hand swipe left,hand swipe left
+202,6656,0,0,130,1,hand swipe left,hand swipe left
+203,10043,0,0,130,1,hand swipe left,hand swipe left
+204,6842,0,0,130,1,hand swipe left,hand swipe left
+205,8514,0,0,130,1,hand swipe left,hand swipe left
+206,7162,0,0,130,1,hand swipe left,hand swipe left
+207,3053,0,0,130,1,hand swipe left,hand swipe left
+208,802,0,0,130,1,hand swipe left,hand swipe left
+209,5235,0,0,130,1,hand swipe left,hand swipe left
+210,6064,0,0,130,1,hand swipe left,hand swipe left
+211,7735,0,0,130,1,hand swipe left,hand swipe left
+212,7082,0,0,130,1,hand swipe left,hand swipe left
+213,8425,0,0,130,1,hand swipe left,hand swipe left
+214,5459,0,0,130,1,hand swipe left,hand swipe left
+215,4435,0,0,130,1,hand swipe left,hand swipe left
+216,2381,0,0,130,1,hand swipe left,hand swipe left
+217,7228,0,0,130,1,hand swipe left,hand swipe left
+218,4168,0,0,130,1,hand swipe left,hand swipe left
+219,628,0,0,130,1,hand swipe left,hand swipe left
+220,8848,0,0,130,1,hand swipe left,hand swipe left
+221,2218,0,0,130,1,hand swipe left,hand swipe left
+222,6916,0,0,130,1,hand swipe left,hand swipe left
+223,5927,0,0,130,1,hand swipe left,hand swipe left
+224,6426,0,0,130,1,hand swipe left,hand swipe left
+225,1641,0,0,130,1,hand swipe left,hand swipe left
+226,411,0,0,130,1,hand swipe left,hand swipe left
+227,2746,0,0,130,1,hand swipe left,hand swipe left
+228,7197,0,0,130,1,hand swipe left,hand swipe left
+229,3643,0,0,130,1,hand swipe left,hand swipe left
+230,3764,0,0,130,1,hand swipe left,hand swipe left
+231,2011,0,0,130,1,hand swipe left,hand swipe left
+232,3093,0,0,130,1,hand swipe left,hand swipe left
+233,4109,0,0,130,1,hand swipe left,hand swipe left
+234,9243,0,0,130,1,hand swipe left,hand swipe left
+235,5808,0,0,130,1,hand swipe left,hand swipe left
+236,1932,0,0,130,1,hand swipe left,hand swipe left
+237,8001,0,0,130,1,hand swipe left,hand swipe left
+238,211,0,0,130,1,hand swipe left,hand swipe left
+239,3336,0,0,130,1,hand swipe left,hand swipe left
+240,3199,0,0,130,1,hand swipe left,hand swipe left
+241,9946,0,0,130,1,hand swipe left,hand swipe left
+242,10041,0,0,130,1,hand swipe left,hand swipe left
+243,7409,0,0,130,1,hand swipe left,hand swipe left
+244,6343,0,0,130,1,hand swipe left,hand swipe left
+245,97,0,0,130,1,hand swipe left,hand swipe left
+246,2698,0,0,130,1,hand swipe left,hand swipe left
+247,2842,0,0,130,1,hand swipe left,hand swipe left
+248,957,0,0,130,1,hand swipe left,hand swipe left
+249,8667,0,0,130,1,hand swipe left,hand swipe left
+250,2281,0,0,130,1,hand swipe left,hand swipe left
+251,8632,0,0,130,1,hand swipe left,hand swipe left
+252,3468,0,0,130,1,hand swipe left,hand swipe left
+253,5809,0,0,130,1,hand swipe left,hand swipe left
+254,3023,0,0,130,1,hand swipe left,hand swipe left
+255,6917,0,0,130,1,hand swipe left,hand swipe left
+256,1219,0,0,130,1,hand swipe left,hand swipe left
+257,722,0,0,130,1,hand swipe left,hand swipe left
+258,8115,0,0,130,1,hand swipe left,hand swipe left
+259,5496,0,0,130,1,hand swipe left,hand swipe left
+260,132,0,0,130,1,hand swipe left,hand swipe left
+261,6189,0,0,130,1,hand swipe left,hand swipe left
+262,7848,0,0,130,1,hand swipe left,hand swipe left
+263,5497,0,0,130,1,hand swipe left,hand swipe left
+264,7348,0,0,130,1,hand swipe left,hand swipe left
+265,2086,0,0,130,1,hand swipe left,hand swipe left
+266,7603,0,0,130,1,hand swipe left,hand swipe left
+267,7229,0,0,130,1,hand swipe left,hand swipe left
+268,2012,0,0,130,1,hand swipe left,hand swipe left
+269,5237,0,0,130,1,hand swipe left,hand swipe left
+270,4501,0,0,130,1,hand swipe left,hand swipe left
+271,2087,0,0,130,1,hand swipe left,hand swipe left
+272,9904,0,0,130,1,hand swipe left,hand swipe left
+273,6005,0,0,130,1,hand swipe left,hand swipe left
+274,5185,0,0,130,1,hand swipe left,hand swipe left
+275,664,0,0,130,1,hand swipe left,hand swipe left
+276,1652,0,0,130,1,hand swipe left,hand swipe left
+277,8571,0,0,130,1,hand swipe left,hand swipe left
+278,473,0,0,130,1,hand swipe left,hand swipe left
+279,5539,0,0,130,1,hand swipe left,hand swipe left
+280,7500,0,0,130,1,hand swipe left,hand swipe left
+281,4462,0,0,130,1,hand swipe left,hand swipe left
+282,7659,0,0,130,1,hand swipe left,hand swipe left
+283,1482,0,0,130,1,hand swipe left,hand swipe left
+284,1331,0,0,130,1,hand swipe left,hand swipe left
+285,6654,0,0,130,1,hand swipe left,hand swipe left
+286,7687,0,0,130,1,hand swipe left,hand swipe left
+287,6583,0,0,130,1,hand swipe left,hand swipe left
+288,4891,0,0,130,1,hand swipe left,hand swipe left
+289,5055,0,0,130,1,hand swipe left,hand swipe left
+290,7849,0,0,130,1,hand swipe left,hand swipe left
+291,1063,0,0,130,1,hand swipe left,hand swipe left
+292,4052,0,0,130,1,hand swipe left,hand swipe left
+293,3925,0,0,130,1,hand swipe left,hand swipe left
+294,3991,0,0,130,1,hand swipe left,hand swipe left
+295,8669,0,0,130,1,hand swipe left,hand swipe left
+296,1976,0,0,130,1,hand swipe left,hand swipe left
+297,1129,0,0,130,1,hand swipe left,hand swipe left
+298,6584,0,0,130,1,hand swipe left,hand swipe left
+299,4378,0,0,130,1,hand swipe left,hand swipe left
+300,1744,0,0,130,1,hand swipe left,hand swipe left
+301,7762,0,0,130,1,hand swipe left,hand swipe left
+302,7161,0,0,130,1,hand swipe left,hand swipe left
+303,8522,0,0,130,1,hand swipe left,hand swipe left
+304,5330,0,0,130,1,hand swipe left,hand swipe left
+305,3127,0,0,130,1,hand swipe left,hand swipe left
+306,7857,0,0,130,1,hand swipe left,hand swipe left
+307,582,0,0,130,1,hand swipe left,hand swipe left
+308,1329,0,0,130,1,hand swipe left,hand swipe left
+309,41,0,0,130,1,hand swipe left,hand swipe left
+310,8885,0,0,130,1,hand swipe left,hand swipe left
+311,9445,0,0,130,1,hand swipe left,hand swipe left
+312,135,0,0,130,2,hand swipe right,hand swipe right
+313,222,0,0,130,2,hand swipe right,hand swipe right
+314,500,0,0,130,2,hand swipe right,hand swipe right
+315,9559,0,0,130,2,hand swipe right,hand swipe right
+316,2123,0,0,130,2,hand swipe right,hand swipe right
+317,8937,0,0,130,2,hand swipe right,hand swipe right
+318,5807,0,0,130,2,hand swipe right,hand swipe right
+319,5401,0,0,130,2,hand swipe right,hand swipe right
+320,8070,0,0,130,2,hand swipe right,hand swipe right
+321,982,0,0,130,2,hand swipe right,hand swipe right
+322,8495,0,0,130,2,hand swipe right,hand swipe right
+323,3268,0,0,130,2,hand swipe right,hand swipe right
+324,2711,0,0,130,2,hand swipe right,hand swipe right
+325,8419,0,0,130,2,hand swipe right,hand swipe right
+326,7649,0,0,130,2,hand swipe right,hand swipe right
+327,2014,0,0,130,2,hand swipe right,hand swipe right
+328,1586,0,0,130,2,hand swipe right,hand swipe right
+329,3896,0,0,130,2,hand swipe right,hand swipe right
+330,4282,0,0,130,2,hand swipe right,hand swipe right
+331,1097,0,0,130,2,hand swipe right,hand swipe right
+332,103,0,0,130,2,hand swipe right,hand swipe right
+333,234,0,0,130,2,hand swipe right,hand swipe right
+334,3140,0,0,130,2,hand swipe right,hand swipe right
+335,3312,0,0,130,2,hand swipe right,hand swipe right
+336,4424,0,0,130,2,hand swipe right,hand swipe right
+337,3659,0,0,130,2,hand swipe right,hand swipe right
+338,3313,0,0,130,2,hand swipe right,hand swipe right
+339,6262,0,0,130,2,hand swipe right,hand swipe right
+340,420,0,0,130,2,hand swipe right,hand swipe right
+341,3895,0,0,130,2,hand swipe right,hand swipe right
+342,8210,0,0,130,2,hand swipe right,hand swipe right
+343,7508,0,0,130,2,hand swipe right,hand swipe right
+344,7002,0,0,130,2,hand swipe right,hand swipe right
+345,9747,0,0,130,2,hand swipe right,hand swipe right
+346,4319,0,0,130,2,hand swipe right,hand swipe right
+347,5618,0,0,130,2,hand swipe right,hand swipe right
+348,9674,0,0,130,2,hand swipe right,hand swipe right
+349,6908,0,0,130,2,hand swipe right,hand swipe right
+350,7184,0,0,130,2,hand swipe right,hand swipe right
+351,1632,0,0,130,2,hand swipe right,hand swipe right
+352,6037,0,0,130,2,hand swipe right,hand swipe right
+353,5451,0,0,130,2,hand swipe right,hand swipe right
+354,6121,0,0,130,2,hand swipe right,hand swipe right
+355,4104,0,0,130,2,hand swipe right,hand swipe right
+356,7608,0,0,130,2,hand swipe right,hand swipe right
+357,2108,0,0,130,2,hand swipe right,hand swipe right
+358,9726,0,0,130,2,hand swipe right,hand swipe right
+359,9316,0,0,130,2,hand swipe right,hand swipe right
+360,8727,0,0,130,2,hand swipe right,hand swipe right
+361,2173,0,0,130,2,hand swipe right,hand swipe right
+362,6612,0,0,130,2,hand swipe right,hand swipe right
+363,3180,0,0,130,2,hand swipe right,hand swipe right
+364,548,0,0,130,2,hand swipe right,hand swipe right
+365,1391,0,0,130,2,hand swipe right,hand swipe right
+366,2514,0,0,130,2,hand swipe right,hand swipe right
+367,4590,0,0,130,2,hand swipe right,hand swipe right
+368,9748,0,0,130,2,hand swipe right,hand swipe right
+369,6765,0,0,130,2,hand swipe right,hand swipe right
+370,4546,0,0,130,2,hand swipe right,hand swipe right
+371,1327,0,0,130,2,hand swipe right,hand swipe right
+372,3090,0,0,130,2,hand swipe right,hand swipe right
+373,2960,0,0,130,2,hand swipe right,hand swipe right
+374,8390,0,0,130,2,hand swipe right,hand swipe right
+375,6884,0,0,130,2,hand swipe right,hand swipe right
+376,7992,0,0,130,2,hand swipe right,hand swipe right
+377,4076,0,0,130,2,hand swipe right,hand swipe right
+378,8072,0,0,130,2,hand swipe right,hand swipe right
+379,3894,0,0,130,2,hand swipe right,hand swipe right
+380,4201,0,0,130,2,hand swipe right,hand swipe right
+381,8494,0,0,130,2,hand swipe right,hand swipe right
+382,4874,0,0,130,2,hand swipe right,hand swipe right
+383,3014,0,0,130,2,hand swipe right,hand swipe right
+384,1145,0,0,130,2,hand swipe right,hand swipe right
+385,8471,0,0,130,2,hand swipe right,hand swipe right
+386,7575,0,0,130,2,hand swipe right,hand swipe right
+387,8071,0,0,130,2,hand swipe right,hand swipe right
+388,9882,0,0,130,2,hand swipe right,hand swipe right
+389,7373,0,0,130,2,hand swipe right,hand swipe right
+390,2901,0,0,130,2,hand swipe right,hand swipe right
+391,10026,0,0,130,2,hand swipe right,hand swipe right
+392,6171,0,0,130,2,hand swipe right,hand swipe right
+393,7576,0,0,130,2,hand swipe right,hand swipe right
+394,2878,0,0,130,2,hand swipe right,hand swipe right
+395,1028,0,0,130,2,hand swipe right,hand swipe right
+396,3967,0,0,130,2,hand swipe right,hand swipe right
+397,8259,0,0,130,2,hand swipe right,hand swipe right
+398,7062,0,0,130,2,hand swipe right,hand swipe right
+399,3613,0,0,130,2,hand swipe right,hand swipe right
+400,9805,0,0,130,2,hand swipe right,hand swipe right
+401,8907,0,0,130,2,hand swipe right,hand swipe right
+402,6850,0,0,130,2,hand swipe right,hand swipe right
+403,7893,0,0,130,2,hand swipe right,hand swipe right
+404,5294,0,0,130,2,hand swipe right,hand swipe right
+405,5453,0,0,130,2,hand swipe right,hand swipe right
+406,5292,0,0,130,2,hand swipe right,hand swipe right
+407,331,0,0,130,2,hand swipe right,hand swipe right
+408,4776,0,0,130,2,hand swipe right,hand swipe right
+409,224,0,0,130,2,hand swipe right,hand swipe right
+410,5011,0,0,130,2,hand swipe right,hand swipe right
+411,7137,0,0,130,2,hand swipe right,hand swipe right
+412,3091,0,0,130,2,hand swipe right,hand swipe right
+413,7484,0,0,130,2,hand swipe right,hand swipe right
+414,1096,0,0,130,2,hand swipe right,hand swipe right
+415,6722,0,0,130,2,hand swipe right,hand swipe right
+416,445,0,0,130,2,hand swipe right,hand swipe right
+417,7648,0,0,130,2,hand swipe right,hand swipe right
+418,2300,0,0,130,2,hand swipe right,hand swipe right
+419,7064,0,0,130,2,hand swipe right,hand swipe right
+420,4480,0,0,130,2,hand swipe right,hand swipe right
+421,1823,0,0,130,2,hand swipe right,hand swipe right
+422,5692,0,0,130,2,hand swipe right,hand swipe right
+423,8170,0,0,130,2,hand swipe right,hand swipe right
+424,3267,0,0,130,2,hand swipe right,hand swipe right
+425,5616,0,0,130,2,hand swipe right,hand swipe right
+426,1049,0,0,130,2,hand swipe right,hand swipe right
+427,6036,0,0,130,2,hand swipe right,hand swipe right
+428,8869,0,0,130,2,hand swipe right,hand swipe right
+429,66,0,0,130,2,hand swipe right,hand swipe right
+430,68,0,0,130,2,hand swipe right,hand swipe right
+431,4498,0,0,130,2,hand swipe right,hand swipe right
+432,6338,0,0,130,2,hand swipe right,hand swipe right
+433,7372,0,0,130,2,hand swipe right,hand swipe right
+434,5693,0,0,130,2,hand swipe right,hand swipe right
+435,4235,0,0,130,2,hand swipe right,hand swipe right
+436,4924,0,0,130,2,hand swipe right,hand swipe right
+437,2476,0,0,130,2,hand swipe right,hand swipe right
+438,9560,0,0,130,2,hand swipe right,hand swipe right
+439,4026,0,0,130,2,hand swipe right,hand swipe right
+440,9955,0,0,130,2,hand swipe right,hand swipe right
+441,601,0,0,130,2,hand swipe right,hand swipe right
+442,9202,0,0,130,2,hand swipe right,hand swipe right
+443,8728,0,0,130,2,hand swipe right,hand swipe right
+444,9031,0,0,130,2,hand swipe right,hand swipe right
+445,3487,0,0,130,2,hand swipe right,hand swipe right
+446,9981,0,0,130,2,hand swipe right,hand swipe right
+447,8113,0,0,130,2,hand swipe right,hand swipe right
+448,675,0,0,130,2,hand swipe right,hand swipe right
+449,815,0,0,130,2,hand swipe right,hand swipe right
+450,981,0,0,130,2,hand swipe right,hand swipe right
+451,5225,0,0,130,2,hand swipe right,hand swipe right
+452,4777,0,0,130,2,hand swipe right,hand swipe right
+453,8615,0,0,130,2,hand swipe right,hand swipe right
+454,3238,0,0,130,2,hand swipe right,hand swipe right
+455,2570,0,0,130,2,hand swipe right,hand swipe right
+456,8588,0,0,130,2,hand swipe right,hand swipe right
+457,1759,0,0,130,2,hand swipe right,hand swipe right
+458,4547,0,0,130,2,hand swipe right,hand swipe right
+459,6541,0,0,130,2,hand swipe right,hand swipe right
+460,5494,0,0,130,2,hand swipe right,hand swipe right
+461,7729,0,0,130,2,hand swipe right,hand swipe right
+462,2788,0,0,130,2,hand swipe right,hand swipe right
+463,6849,0,0,130,2,hand swipe right,hand swipe right
+464,6614,0,0,130,2,hand swipe right,hand swipe right
+465,724,0,0,130,2,hand swipe right,hand swipe right
+466,3508,0,0,130,2,hand swipe right,hand swipe right
+467,1192,0,0,130,2,hand swipe right,hand swipe right
+468,4034,0,0,130,10,metal,metal
+469,5995,0,0,130,10,metal,metal
+470,3815,0,0,130,10,metal,metal
+471,1205,0,0,130,10,metal,metal
+472,370,0,0,130,10,metal,metal
+473,2473,0,0,130,10,metal,metal
+474,2049,0,0,130,10,metal,metal
+475,5641,0,0,130,10,metal,metal
+476,5008,0,0,130,10,metal,metal
+477,3949,0,0,130,10,metal,metal
+478,8819,0,0,130,10,metal,metal
+479,6288,0,0,130,10,metal,metal
+480,2382,0,0,130,10,metal,metal
+481,7098,0,0,130,10,metal,metal
+482,5561,0,0,130,10,metal,metal
+483,3930,0,0,130,10,metal,metal
+484,10019,0,0,130,10,metal,metal
+485,3384,0,0,130,10,metal,metal
+486,8833,0,0,130,10,metal,metal
+487,5688,0,0,130,10,metal,metal
+488,9002,0,0,130,10,metal,metal
+489,8834,0,0,130,10,metal,metal
+490,2982,0,0,130,10,metal,metal
+491,7916,0,0,130,10,metal,metal
+492,8716,0,0,130,10,metal,metal
+493,9979,0,0,130,10,metal,metal
+494,4284,0,0,130,10,metal,metal
+495,431,0,0,130,10,metal,metal
+496,1506,0,0,130,10,metal,metal
+497,5957,0,0,130,10,metal,metal
+498,1393,0,0,130,10,metal,metal
+499,5794,0,0,130,10,metal,metal
+500,207,0,0,130,10,metal,metal
+501,5603,0,0,130,10,metal,metal
+502,9655,0,0,130,10,metal,metal
+503,4808,0,0,130,10,metal,metal
+504,6095,0,0,130,10,metal,metal
+505,2639,0,0,130,10,metal,metal
+506,7263,0,0,130,10,metal,metal
+507,2028,0,0,130,10,metal,metal
+508,1890,0,0,130,10,metal,metal
+509,7914,0,0,130,10,metal,metal
+510,209,0,0,130,10,metal,metal
+511,1021,0,0,130,10,metal,metal
+512,2648,0,0,130,10,metal,metal
+513,5795,0,0,130,10,metal,metal
+514,9654,0,0,130,10,metal,metal
+515,5380,0,0,130,10,metal,metal
+516,8159,0,0,130,10,metal,metal
+517,3103,0,0,130,10,metal,metal
+518,1833,0,0,130,10,metal,metal
+519,5032,0,0,130,10,metal,metal
+520,2559,0,0,130,10,metal,metal
+521,1333,0,0,130,10,metal,metal
+522,1891,0,0,130,10,metal,metal
+523,2240,0,0,130,10,metal,metal
+524,4548,0,0,130,10,metal,metal
+525,4912,0,0,130,10,metal,metal
+526,4324,0,0,130,10,metal,metal
+527,2051,0,0,130,10,metal,metal
+528,5007,0,0,130,10,metal,metal
+529,1069,0,0,130,10,metal,metal
+530,1282,0,0,130,10,metal,metal
+531,9830,0,0,130,10,metal,metal
+532,5422,0,0,130,10,metal,metal
+533,3491,0,0,130,10,metal,metal
+534,429,0,0,130,10,metal,metal
+535,1242,0,0,130,10,metal,metal
+536,7366,0,0,130,10,metal,metal
+537,4285,0,0,130,10,metal,metal
+538,7581,0,0,130,10,metal,metal
+539,9761,0,0,130,10,metal,metal
+540,936,0,0,130,10,metal,metal
+541,3465,0,0,130,10,metal,metal
+542,2129,0,0,130,10,metal,metal
+543,6619,0,0,130,10,metal,metal
+544,9122,0,0,130,10,metal,metal
+545,3545,0,0,130,10,metal,metal
+546,8717,0,0,130,10,metal,metal
+547,6257,0,0,130,10,metal,metal
+548,3409,0,0,130,10,metal,metal
+549,6225,0,0,130,10,metal,metal
+550,419,0,0,130,10,metal,metal
+551,171,0,0,130,10,metal,metal
+552,2600,0,0,130,10,metal,metal
+553,3152,0,0,130,10,metal,metal
+554,9520,0,0,130,10,metal,metal
+555,1591,0,0,130,10,metal,metal
+556,6696,0,0,130,10,metal,metal
+557,4666,0,0,130,10,metal,metal
+558,2304,0,0,130,10,metal,metal
+559,6333,0,0,130,10,metal,metal
+560,2637,0,0,130,10,metal,metal
+561,637,0,0,130,10,metal,metal
+562,2265,0,0,130,10,metal,metal
+563,8619,0,0,130,10,metal,metal
+564,4286,0,0,130,10,metal,metal
+565,3840,0,0,130,10,metal,metal
+566,7971,0,0,130,10,metal,metal
+567,1695,0,0,130,10,metal,metal
+568,7973,0,0,130,10,metal,metal
+569,8028,0,0,130,10,metal,metal
+570,9708,0,0,130,10,metal,metal
+571,830,0,0,130,10,metal,metal
+572,1334,0,0,130,10,metal,metal
+573,739,0,0,130,10,metal,metal
+574,6093,0,0,130,10,metal,metal
+575,8678,0,0,130,10,metal,metal
+576,4197,0,0,130,10,metal,metal
+577,1592,0,0,130,10,metal,metal
+578,4756,0,0,130,10,metal,metal
+579,2646,0,0,130,10,metal,metal
+580,4068,0,0,130,10,metal,metal
+581,8300,0,0,130,10,metal,metal
+582,5832,0,0,130,10,metal,metal
+583,5283,0,0,130,10,metal,metal
+584,5175,0,0,130,10,metal,metal
+585,4209,0,0,130,10,metal,metal
+586,912,0,0,130,10,metal,metal
+587,417,0,0,130,10,metal,metal
+588,3842,0,0,130,10,metal,metal
+589,4620,0,0,130,10,metal,metal
+590,7869,0,0,130,10,metal,metal
+591,559,0,0,130,10,metal,metal
+592,5416,0,0,130,10,metal,metal
+593,2561,0,0,130,10,metal,metal
+594,1697,0,0,130,10,metal,metal
+595,5473,0,0,130,10,metal,metal
+596,7700,0,0,130,10,metal,metal
+597,702,0,0,130,10,metal,metal
+598,738,0,0,130,10,metal,metal
+599,1094,0,0,130,10,metal,metal
+600,5152,0,0,130,10,metal,metal
+601,5177,0,0,130,10,metal,metal
+602,8238,0,0,130,10,metal,metal
+603,3651,0,0,130,10,metal,metal
+604,6890,0,0,130,10,metal,metal
+605,2164,0,0,130,10,metal,metal
+606,6433,0,0,130,10,metal,metal
+607,1794,0,0,130,10,metal,metal
+608,6161,0,0,130,10,metal,metal
+609,4549,0,0,130,10,metal,metal
+610,7265,0,0,130,10,metal,metal
+611,4110,0,0,130,10,metal,metal
+612,7817,0,0,130,10,metal,metal
+613,2560,0,0,130,10,metal,metal
+614,6904,0,0,130,10,metal,metal
+615,9357,0,0,130,10,metal,metal
+616,5908,0,0,130,10,metal,metal
+617,1360,0,0,130,10,metal,metal
+618,7988,0,0,130,10,metal,metal
+619,2356,0,0,130,10,metal,metal
+620,3355,0,0,130,10,metal,metal
+621,6620,0,0,130,10,metal,metal
+622,4348,0,0,130,10,metal,metal
+623,3579,0,0,130,10,metal,metal
+624,6703,0,0,130,8,page flip,page flip
+625,5295,0,0,130,8,page flip,page flip
+626,2716,0,0,130,8,page flip,page flip
+627,4741,0,0,130,8,page flip,page flip
+628,6192,0,0,130,8,page flip,page flip
+629,2785,0,0,130,8,page flip,page flip
+630,4247,0,0,130,8,page flip,page flip
+631,6194,0,0,130,8,page flip,page flip
+632,1439,0,0,130,8,page flip,page flip
+633,6578,0,0,130,8,page flip,page flip
+634,9282,0,0,130,8,page flip,page flip
+635,7485,0,0,130,8,page flip,page flip
+636,3452,0,0,130,8,page flip,page flip
+637,5246,0,0,130,8,page flip,page flip
+638,6035,0,0,130,8,page flip,page flip
+639,6355,0,0,130,8,page flip,page flip
+640,5398,0,0,130,8,page flip,page flip
+641,2897,0,0,130,8,page flip,page flip
+642,5828,0,0,130,8,page flip,page flip
+643,2376,0,0,130,8,page flip,page flip
+644,3684,0,0,130,8,page flip,page flip
+645,352,0,0,130,8,page flip,page flip
+646,9615,0,0,130,8,page flip,page flip
+647,7279,0,0,130,8,page flip,page flip
+648,6505,0,0,130,8,page flip,page flip
+649,778,0,0,130,8,page flip,page flip
+650,3808,0,0,130,8,page flip,page flip
+651,2296,0,0,130,8,page flip,page flip
+652,8312,0,0,130,8,page flip,page flip
+653,3807,0,0,130,8,page flip,page flip
+654,9831,0,0,130,8,page flip,page flip
+655,3096,0,0,130,8,page flip,page flip
+656,5171,0,0,130,8,page flip,page flip
+657,3523,0,0,130,8,page flip,page flip
+658,6602,0,0,130,8,page flip,page flip
+659,6640,0,0,130,8,page flip,page flip
+660,7791,0,0,130,8,page flip,page flip
+661,3054,0,0,130,8,page flip,page flip
+662,7188,0,0,130,8,page flip,page flip
+663,6412,0,0,130,8,page flip,page flip
+664,1655,0,0,130,8,page flip,page flip
+665,9159,0,0,130,8,page flip,page flip
+666,2161,0,0,130,8,page flip,page flip
+667,3832,0,0,130,8,page flip,page flip
+668,1653,0,0,130,8,page flip,page flip
+669,6068,0,0,130,8,page flip,page flip
+670,7442,0,0,130,8,page flip,page flip
+671,3261,0,0,130,8,page flip,page flip
+672,5208,0,0,130,8,page flip,page flip
+673,5109,0,0,130,8,page flip,page flip
+674,630,0,0,130,8,page flip,page flip
+675,5063,0,0,130,8,page flip,page flip
+676,425,0,0,130,8,page flip,page flip
+677,181,0,0,130,8,page flip,page flip
+678,2162,0,0,130,8,page flip,page flip
+679,2875,0,0,130,8,page flip,page flip
+680,36,0,0,130,8,page flip,page flip
+681,3183,0,0,130,8,page flip,page flip
+682,454,0,0,130,8,page flip,page flip
+683,9571,0,0,130,8,page flip,page flip
+684,5397,0,0,130,8,page flip,page flip
+685,4600,0,0,130,8,page flip,page flip
+686,2743,0,0,130,8,page flip,page flip
+687,6356,0,0,130,8,page flip,page flip
+688,4146,0,0,130,8,page flip,page flip
+689,4804,0,0,130,8,page flip,page flip
+690,749,0,0,130,8,page flip,page flip
+691,4147,0,0,130,8,page flip,page flip
+692,1511,0,0,130,8,page flip,page flip
+693,5331,0,0,130,8,page flip,page flip
+694,1950,0,0,130,8,page flip,page flip
+695,9603,0,0,130,8,page flip,page flip
+696,8822,0,0,130,8,page flip,page flip
+697,6253,0,0,130,8,page flip,page flip
+698,942,0,0,130,8,page flip,page flip
+699,7389,0,0,130,8,page flip,page flip
+700,3233,0,0,130,8,page flip,page flip
+701,6774,0,0,130,8,page flip,page flip
+702,9097,0,0,130,8,page flip,page flip
+703,2876,0,0,130,8,page flip,page flip
+704,2451,0,0,130,8,page flip,page flip
+705,3024,0,0,130,8,page flip,page flip
+706,307,0,0,130,8,page flip,page flip
+707,5727,0,0,130,8,page flip,page flip
+708,7842,0,0,130,8,page flip,page flip
+709,8978,0,0,130,8,page flip,page flip
+710,6601,0,0,130,8,page flip,page flip
+711,5111,0,0,130,8,page flip,page flip
+712,6923,0,0,130,8,page flip,page flip
+713,8144,0,0,130,8,page flip,page flip
+714,662,0,0,130,8,page flip,page flip
+715,3346,0,0,130,8,page flip,page flip
+716,8517,0,0,130,8,page flip,page flip
+717,4969,0,0,130,8,page flip,page flip
+718,4192,0,0,130,8,page flip,page flip
+719,5359,0,0,130,8,page flip,page flip
+720,1751,0,0,130,8,page flip,page flip
+721,4656,0,0,130,8,page flip,page flip
+722,1780,0,0,130,8,page flip,page flip
+723,3809,0,0,130,8,page flip,page flip
+724,6098,0,0,130,8,page flip,page flip
+725,7035,0,0,130,8,page flip,page flip
+726,2135,0,0,130,8,page flip,page flip
+727,8432,0,0,130,8,page flip,page flip
+728,7224,0,0,130,8,page flip,page flip
+729,980,0,0,130,8,page flip,page flip
+730,455,0,0,130,8,page flip,page flip
+731,4127,0,0,130,8,page flip,page flip
+732,424,0,0,130,8,page flip,page flip
+733,3833,0,0,130,8,page flip,page flip
+734,903,0,0,130,8,page flip,page flip
+735,8769,0,0,130,8,page flip,page flip
+736,2200,0,0,130,8,page flip,page flip
+737,1900,0,0,130,8,page flip,page flip
+738,5686,0,0,130,8,page flip,page flip
+739,8743,0,0,130,8,page flip,page flip
+740,9535,0,0,130,8,page flip,page flip
+741,9036,0,0,130,8,page flip,page flip
+742,3603,0,0,130,8,page flip,page flip
+743,9666,0,0,130,8,page flip,page flip
+744,4556,0,0,130,8,page flip,page flip
+745,1260,0,0,130,8,page flip,page flip
+746,9832,0,0,130,8,page flip,page flip
+747,3231,0,0,130,8,page flip,page flip
+748,3938,0,0,130,8,page flip,page flip
+749,6702,0,0,130,8,page flip,page flip
+750,5984,0,0,130,8,page flip,page flip
+751,7440,0,0,130,8,page flip,page flip
+752,6151,0,0,130,8,page flip,page flip
+753,3372,0,0,130,8,page flip,page flip
+754,6871,0,0,130,8,page flip,page flip
+755,943,0,0,130,8,page flip,page flip
+756,4352,0,0,130,8,page flip,page flip
+757,484,0,0,130,8,page flip,page flip
+758,6534,0,0,130,8,page flip,page flip
+759,2523,0,0,130,8,page flip,page flip
+760,262,0,0,130,8,page flip,page flip
+761,5918,0,0,130,8,page flip,page flip
+762,864,0,0,130,8,page flip,page flip
+763,4916,0,0,130,8,page flip,page flip
+764,423,0,0,130,8,page flip,page flip
+765,91,0,0,130,8,page flip,page flip
+766,8192,0,0,130,8,page flip,page flip
+767,1983,0,0,130,8,page flip,page flip
+768,660,0,0,130,8,page flip,page flip
+769,8011,0,0,130,8,page flip,page flip
+770,7792,0,0,130,8,page flip,page flip
+771,2089,0,0,130,8,page flip,page flip
+772,8742,0,0,130,8,page flip,page flip
+773,2226,0,0,130,8,page flip,page flip
+774,7727,0,0,130,8,page flip,page flip
+775,6984,0,0,130,8,page flip,page flip
+776,6150,0,0,130,8,page flip,page flip
+777,2919,0,0,130,8,page flip,page flip
+778,1606,0,0,130,8,page flip,page flip
+779,4275,0,0,130,8,page flip,page flip
+780,3755,0,0,130,9,peace,peace
+781,3309,0,0,130,9,peace,peace
+782,9010,0,0,130,9,peace,peace
+783,9408,0,0,130,9,peace,peace
+784,552,0,0,130,9,peace,peace
+785,8792,0,0,130,9,peace,peace
+786,2777,0,0,130,9,peace,peace
+787,7813,0,0,130,9,peace,peace
+788,3030,0,0,130,9,peace,peace
+789,2031,0,0,130,9,peace,peace
+790,8933,0,0,130,9,peace,peace
+791,9638,0,0,130,9,peace,peace
+792,1971,0,0,130,9,peace,peace
+793,9391,0,0,130,9,peace,peace
+794,1215,0,0,130,9,peace,peace
+795,554,0,0,130,9,peace,peace
+796,9059,0,0,130,9,peace,peace
+797,10007,0,0,130,9,peace,peace
+798,8278,0,0,130,9,peace,peace
+799,4266,0,0,130,9,peace,peace
+800,1336,0,0,130,9,peace,peace
+801,113,0,0,130,9,peace,peace
+802,1701,0,0,130,9,peace,peace
+803,4054,0,0,130,9,peace,peace
+804,4745,0,0,130,9,peace,peace
+805,1451,0,0,130,9,peace,peace
+806,4652,0,0,130,9,peace,peace
+807,4404,0,0,130,9,peace,peace
+808,8790,0,0,130,9,peace,peace
+809,5912,0,0,130,9,peace,peace
+810,6748,0,0,130,9,peace,peace
+811,7966,0,0,130,9,peace,peace
+812,1897,0,0,130,9,peace,peace
+813,5489,0,0,130,9,peace,peace
+814,4917,0,0,130,9,peace,peace
+815,4542,0,0,130,9,peace,peace
+816,8694,0,0,130,9,peace,peace
+817,119,0,0,130,9,peace,peace
+818,5357,0,0,130,9,peace,peace
+819,987,0,0,130,9,peace,peace
+820,5091,0,0,130,9,peace,peace
+821,7845,0,0,130,9,peace,peace
+822,8221,0,0,130,9,peace,peace
+823,7503,0,0,130,9,peace,peace
+824,911,0,0,130,9,peace,peace
+825,6180,0,0,130,9,peace,peace
+826,6000,0,0,130,9,peace,peace
+827,7125,0,0,130,9,peace,peace
+828,4811,0,0,130,9,peace,peace
+829,4683,0,0,130,9,peace,peace
+830,9230,0,0,130,9,peace,peace
+831,9392,0,0,130,9,peace,peace
+832,3716,0,0,130,9,peace,peace
+833,5596,0,0,130,9,peace,peace
+834,3459,0,0,130,9,peace,peace
+835,7878,0,0,130,9,peace,peace
+836,8860,0,0,130,9,peace,peace
+837,1530,0,0,130,9,peace,peace
+838,5800,0,0,130,9,peace,peace
+839,7965,0,0,130,9,peace,peace
+840,8962,0,0,130,9,peace,peace
+841,176,0,0,130,9,peace,peace
+842,9942,0,0,130,9,peace,peace
+843,9539,0,0,130,9,peace,peace
+844,1571,0,0,130,9,peace,peace
+845,6574,0,0,130,9,peace,peace
+846,7418,0,0,130,9,peace,peace
+847,5195,0,0,130,9,peace,peace
+848,9332,0,0,130,9,peace,peace
+849,275,0,0,130,9,peace,peace
+850,2374,0,0,130,9,peace,peace
+851,5093,0,0,130,9,peace,peace
+852,3177,0,0,130,9,peace,peace
+853,1531,0,0,130,9,peace,peace
+854,9791,0,0,130,9,peace,peace
+855,3129,0,0,130,9,peace,peace
+856,6927,0,0,130,9,peace,peace
+857,4828,0,0,130,9,peace,peace
+858,5879,0,0,130,9,peace,peace
+859,9943,0,0,130,9,peace,peace
+860,7558,0,0,130,9,peace,peace
+861,2776,0,0,130,9,peace,peace
+862,6350,0,0,130,9,peace,peace
+863,1782,0,0,130,9,peace,peace
+864,9600,0,0,130,9,peace,peace
+865,407,0,0,130,9,peace,peace
+866,2033,0,0,130,9,peace,peace
+867,2341,0,0,130,9,peace,peace
+868,7010,0,0,130,9,peace,peace
+869,8898,0,0,130,9,peace,peace
+870,3131,0,0,130,9,peace,peace
+871,4593,0,0,130,9,peace,peace
+872,5731,0,0,130,9,peace,peace
+873,7103,0,0,130,9,peace,peace
+874,1645,0,0,130,9,peace,peace
+875,8462,0,0,130,9,peace,peace
+876,4326,0,0,130,9,peace,peace
+877,2940,0,0,130,9,peace,peace
+878,7812,0,0,130,9,peace,peace
+879,8206,0,0,130,9,peace,peace
+880,4985,0,0,130,9,peace,peace
+881,3415,0,0,130,9,peace,peace
+882,9912,0,0,130,9,peace,peace
+883,6651,0,0,130,9,peace,peace
+884,2684,0,0,130,9,peace,peace
+885,5327,0,0,130,9,peace,peace
+886,5960,0,0,130,9,peace,peace
+887,5958,0,0,130,9,peace,peace
+888,2757,0,0,130,9,peace,peace
+889,709,0,0,130,9,peace,peace
+890,6652,0,0,130,9,peace,peace
+891,7344,0,0,130,9,peace,peace
+892,9637,0,0,130,9,peace,peace
+893,3032,0,0,130,9,peace,peace
+894,6537,0,0,130,9,peace,peace
+895,9753,0,0,130,9,peace,peace
+896,8827,0,0,130,9,peace,peace
+897,8461,0,0,130,9,peace,peace
+898,6946,0,0,130,9,peace,peace
+899,2629,0,0,130,9,peace,peace
+900,1033,0,0,130,9,peace,peace
+901,4011,0,0,130,9,peace,peace
+902,4594,0,0,130,9,peace,peace
+903,3163,0,0,130,9,peace,peace
+904,4237,0,0,130,9,peace,peace
+905,5516,0,0,130,9,peace,peace
+906,5639,0,0,130,9,peace,peace
+907,7917,0,0,130,9,peace,peace
+908,7504,0,0,130,9,peace,peace
+909,757,0,0,130,9,peace,peace
+910,1948,0,0,130,9,peace,peace
+911,1112,0,0,130,9,peace,peace
+912,7814,0,0,130,9,peace,peace
+913,1232,0,0,130,9,peace,peace
+914,8589,0,0,130,9,peace,peace
+915,7505,0,0,130,9,peace,peace
+916,9314,0,0,130,9,peace,peace
+917,2942,0,0,130,9,peace,peace
+918,1820,0,0,130,9,peace,peace
+919,2508,0,0,130,9,peace,peace
+920,4046,0,0,130,9,peace,peace
+921,2461,0,0,130,9,peace,peace
+922,784,0,0,130,9,peace,peace
+923,5799,0,0,130,9,peace,peace
+924,8386,0,0,130,9,peace,peace
+925,3620,0,0,130,9,peace,peace
+926,273,0,0,130,9,peace,peace
+927,9312,0,0,130,9,peace,peace
+928,2375,0,0,130,9,peace,peace
+929,7288,0,0,130,9,peace,peace
+930,4769,0,0,130,9,peace,peace
+931,708,0,0,130,9,peace,peace
+932,1301,0,0,130,9,peace,peace
+933,7238,0,0,130,9,peace,peace
+934,2247,0,0,130,9,peace,peace
+935,4236,0,0,130,9,peace,peace
+936,2365,0,0,130,3,pinch in,pinch in
+937,6687,0,0,130,3,pinch in,pinch in
+938,9627,0,0,130,3,pinch in,pinch in
+939,2185,0,0,130,3,pinch in,pinch in
+940,1993,0,0,130,3,pinch in,pinch in
+941,5395,0,0,130,3,pinch in,pinch in
+942,2184,0,0,130,3,pinch in,pinch in
+943,9172,0,0,130,3,pinch in,pinch in
+944,3988,0,0,130,3,pinch in,pinch in
+945,624,0,0,130,3,pinch in,pinch in
+946,7896,0,0,130,3,pinch in,pinch in
+947,1965,0,0,130,3,pinch in,pinch in
+948,9084,0,0,130,3,pinch in,pinch in
+949,6509,0,0,130,3,pinch in,pinch in
+950,1291,0,0,130,3,pinch in,pinch in
+951,4748,0,0,130,3,pinch in,pinch in
+952,3503,0,0,130,3,pinch in,pinch in
+953,7963,0,0,130,3,pinch in,pinch in
+954,8376,0,0,130,3,pinch in,pinch in
+955,9566,0,0,130,3,pinch in,pinch in
+956,6744,0,0,130,3,pinch in,pinch in
+957,2466,0,0,130,3,pinch in,pinch in
+958,1228,0,0,130,3,pinch in,pinch in
+959,1864,0,0,130,3,pinch in,pinch in
+960,6732,0,0,130,3,pinch in,pinch in
+961,6507,0,0,130,3,pinch in,pinch in
+962,1663,0,0,130,3,pinch in,pinch in
+963,6831,0,0,130,3,pinch in,pinch in
+964,1379,0,0,130,3,pinch in,pinch in
+965,9909,0,0,130,3,pinch in,pinch in
+966,4243,0,0,130,3,pinch in,pinch in
+967,8197,0,0,130,3,pinch in,pinch in
+968,3804,0,0,130,3,pinch in,pinch in
+969,4932,0,0,130,3,pinch in,pinch in
+970,7776,0,0,130,3,pinch in,pinch in
+971,4382,0,0,130,3,pinch in,pinch in
+972,5964,0,0,130,3,pinch in,pinch in
+973,7563,0,0,130,3,pinch in,pinch in
+974,9308,0,0,130,3,pinch in,pinch in
+975,7999,0,0,130,3,pinch in,pinch in
+976,4363,0,0,130,3,pinch in,pinch in
+977,521,0,0,130,3,pinch in,pinch in
+978,7160,0,0,130,3,pinch in,pinch in
+979,2126,0,0,130,3,pinch in,pinch in
+980,3660,0,0,130,3,pinch in,pinch in
+981,5796,0,0,130,3,pinch in,pinch in
+982,1115,0,0,130,3,pinch in,pinch in
+983,4793,0,0,130,3,pinch in,pinch in
+984,2790,0,0,130,3,pinch in,pinch in
+985,4933,0,0,130,3,pinch in,pinch in
+986,5513,0,0,130,3,pinch in,pinch in
+987,9707,0,0,130,3,pinch in,pinch in
+988,8579,0,0,130,3,pinch in,pinch in
+989,4273,0,0,130,3,pinch in,pinch in
+990,5053,0,0,130,3,pinch in,pinch in
+991,1565,0,0,130,3,pinch in,pinch in
+992,8831,0,0,130,3,pinch in,pinch in
+993,7256,0,0,130,3,pinch in,pinch in
+994,266,0,0,130,3,pinch in,pinch in
+995,8653,0,0,130,3,pinch in,pinch in
+996,7312,0,0,130,3,pinch in,pinch in
+997,4143,0,0,130,3,pinch in,pinch in
+998,3989,0,0,130,3,pinch in,pinch in
+999,3464,0,0,130,3,pinch in,pinch in
+1000,7428,0,0,130,3,pinch in,pinch in
+1001,3363,0,0,130,3,pinch in,pinch in
+1002,737,0,0,130,3,pinch in,pinch in
+1003,2986,0,0,130,3,pinch in,pinch in
+1004,5396,0,0,130,3,pinch in,pinch in
+1005,3339,0,0,130,3,pinch in,pinch in
+1006,6925,0,0,130,3,pinch in,pinch in
+1007,7804,0,0,130,3,pinch in,pinch in
+1008,7964,0,0,130,3,pinch in,pinch in
+1009,9453,0,0,130,3,pinch in,pinch in
+1010,8863,0,0,130,3,pinch in,pinch in
+1011,6610,0,0,130,3,pinch in,pinch in
+1012,9564,0,0,130,3,pinch in,pinch in
+1013,1371,0,0,130,3,pinch in,pinch in
+1014,3696,0,0,130,3,pinch in,pinch in
+1015,7071,0,0,130,3,pinch in,pinch in
+1016,7521,0,0,130,3,pinch in,pinch in
+1017,3883,0,0,130,3,pinch in,pinch in
+1018,8889,0,0,130,3,pinch in,pinch in
+1019,5394,0,0,130,3,pinch in,pinch in
+1020,4417,0,0,130,3,pinch in,pinch in
+1021,1104,0,0,130,3,pinch in,pinch in
+1022,5034,0,0,130,3,pinch in,pinch in
+1023,5649,0,0,130,3,pinch in,pinch in
+1024,1994,0,0,130,3,pinch in,pinch in
+1025,1747,0,0,130,3,pinch in,pinch in
+1026,2558,0,0,130,3,pinch in,pinch in
+1027,4322,0,0,130,3,pinch in,pinch in
+1028,2364,0,0,130,3,pinch in,pinch in
+1029,9055,0,0,130,3,pinch in,pinch in
+1030,8829,0,0,130,3,pinch in,pinch in
+1031,898,0,0,130,3,pinch in,pinch in
+1032,6659,0,0,130,3,pinch in,pinch in
+1033,6527,0,0,130,3,pinch in,pinch in
+1034,9599,0,0,130,3,pinch in,pinch in
+1035,6993,0,0,130,3,pinch in,pinch in
+1036,5079,0,0,130,3,pinch in,pinch in
+1037,5762,0,0,130,3,pinch in,pinch in
+1038,6580,0,0,130,3,pinch in,pinch in
+1039,8767,0,0,130,3,pinch in,pinch in
+1040,9765,0,0,130,3,pinch in,pinch in
+1041,5279,0,0,130,3,pinch in,pinch in
+1042,834,0,0,130,3,pinch in,pinch in
+1043,5148,0,0,130,3,pinch in,pinch in
+1044,4816,0,0,130,3,pinch in,pinch in
+1045,8360,0,0,130,3,pinch in,pinch in
+1046,7684,0,0,130,3,pinch in,pinch in
+1047,8497,0,0,130,3,pinch in,pinch in
+1048,6078,0,0,130,3,pinch in,pinch in
+1049,4910,0,0,130,3,pinch in,pinch in
+1050,8994,0,0,130,3,pinch in,pinch in
+1051,3919,0,0,130,3,pinch in,pinch in
+1052,4381,0,0,130,3,pinch in,pinch in
+1053,4511,0,0,130,3,pinch in,pinch in
+1054,4562,0,0,130,3,pinch in,pinch in
+1055,7311,0,0,130,3,pinch in,pinch in
+1056,6463,0,0,130,3,pinch in,pinch in
+1057,2286,0,0,130,3,pinch in,pinch in
+1058,1058,0,0,130,3,pinch in,pinch in
+1059,1789,0,0,130,3,pinch in,pinch in
+1060,5674,0,0,130,3,pinch in,pinch in
+1061,2956,0,0,130,3,pinch in,pinch in
+1062,6385,0,0,130,3,pinch in,pinch in
+1063,790,0,0,130,3,pinch in,pinch in
+1064,4183,0,0,130,3,pinch in,pinch in
+1065,3019,0,0,130,3,pinch in,pinch in
+1066,8498,0,0,130,3,pinch in,pinch in
+1067,8150,0,0,130,3,pinch in,pinch in
+1068,3463,0,0,130,3,pinch in,pinch in
+1069,8267,0,0,130,3,pinch in,pinch in
+1070,2442,0,0,130,3,pinch in,pinch in
+1071,6341,0,0,130,3,pinch in,pinch in
+1072,5999,0,0,130,3,pinch in,pinch in
+1073,3144,0,0,130,3,pinch in,pinch in
+1074,9532,0,0,130,3,pinch in,pinch in
+1075,3186,0,0,130,3,pinch in,pinch in
+1076,8544,0,0,130,3,pinch in,pinch in
+1077,7072,0,0,130,3,pinch in,pinch in
+1078,9200,0,0,130,3,pinch in,pinch in
+1079,5651,0,0,130,3,pinch in,pinch in
+1080,8084,0,0,130,3,pinch in,pinch in
+1081,2045,0,0,130,3,pinch in,pinch in
+1082,7088,0,0,130,3,pinch in,pinch in
+1083,8000,0,0,130,3,pinch in,pinch in
+1084,1227,0,0,130,3,pinch in,pinch in
+1085,4038,0,0,130,3,pinch in,pinch in
+1086,6115,0,0,130,3,pinch in,pinch in
+1087,8627,0,0,130,3,pinch in,pinch in
+1088,6875,0,0,130,3,pinch in,pinch in
+1089,7232,0,0,130,3,pinch in,pinch in
+1090,3364,0,0,130,3,pinch in,pinch in
+1091,7414,0,0,130,3,pinch in,pinch in
+1092,4960,0,0,130,4,pinch out,pinch out
+1093,8248,0,0,130,4,pinch out,pinch out
+1094,7625,0,0,130,4,pinch out,pinch out
+1095,1988,0,0,130,4,pinch out,pinch out
+1096,4394,0,0,130,4,pinch out,pinch out
+1097,4170,0,0,130,4,pinch out,pinch out
+1098,6393,0,0,130,4,pinch out,pinch out
+1099,5885,0,0,130,4,pinch out,pinch out
+1100,8436,0,0,130,4,pinch out,pinch out
+1101,4905,0,0,130,4,pinch out,pinch out
+1102,875,0,0,130,4,pinch out,pinch out
+1103,4703,0,0,130,4,pinch out,pinch out
+1104,9471,0,0,130,4,pinch out,pinch out
+1105,8539,0,0,130,4,pinch out,pinch out
+1106,818,0,0,130,4,pinch out,pinch out
+1107,8168,0,0,130,4,pinch out,pinch out
+1108,7573,0,0,130,4,pinch out,pinch out
+1109,2751,0,0,130,4,pinch out,pinch out
+1110,4508,0,0,130,4,pinch out,pinch out
+1111,8286,0,0,130,4,pinch out,pinch out
+1112,1832,0,0,130,4,pinch out,pinch out
+1113,7459,0,0,130,4,pinch out,pinch out
+1114,8442,0,0,130,4,pinch out,pinch out
+1115,6998,0,0,130,4,pinch out,pinch out
+1116,7877,0,0,130,4,pinch out,pinch out
+1117,3913,0,0,130,4,pinch out,pinch out
+1118,969,0,0,130,4,pinch out,pinch out
+1119,6522,0,0,130,4,pinch out,pinch out
+1120,8394,0,0,130,4,pinch out,pinch out
+1121,272,0,0,130,4,pinch out,pinch out
+1122,8793,0,0,130,4,pinch out,pinch out
+1123,8858,0,0,130,4,pinch out,pinch out
+1124,1594,0,0,130,4,pinch out,pinch out
+1125,4132,0,0,130,4,pinch out,pinch out
+1126,1549,0,0,130,4,pinch out,pinch out
+1127,214,0,0,130,4,pinch out,pinch out
+1128,9327,0,0,130,4,pinch out,pinch out
+1129,1173,0,0,130,4,pinch out,pinch out
+1130,5228,0,0,130,4,pinch out,pinch out
+1131,7369,0,0,130,4,pinch out,pinch out
+1132,9451,0,0,130,4,pinch out,pinch out
+1133,9274,0,0,130,4,pinch out,pinch out
+1134,2055,0,0,130,4,pinch out,pinch out
+1135,2665,0,0,130,4,pinch out,pinch out
+1136,7624,0,0,130,4,pinch out,pinch out
+1137,9939,0,0,130,4,pinch out,pinch out
+1138,9452,0,0,130,4,pinch out,pinch out
+1139,8690,0,0,130,4,pinch out,pinch out
+1140,3845,0,0,130,4,pinch out,pinch out
+1141,2303,0,0,130,4,pinch out,pinch out
+1142,2209,0,0,130,4,pinch out,pinch out
+1143,5575,0,0,130,4,pinch out,pinch out
+1144,7327,0,0,130,4,pinch out,pinch out
+1145,4289,0,0,130,4,pinch out,pinch out
+1146,6099,0,0,130,4,pinch out,pinch out
+1147,2752,0,0,130,4,pinch out,pinch out
+1148,2635,0,0,130,4,pinch out,pinch out
+1149,2144,0,0,130,4,pinch out,pinch out
+1150,9168,0,0,130,4,pinch out,pinch out
+1151,9751,0,0,130,4,pinch out,pinch out
+1152,5448,0,0,130,4,pinch out,pinch out
+1153,4357,0,0,130,4,pinch out,pinch out
+1154,5788,0,0,130,4,pinch out,pinch out
+1155,3607,0,0,130,4,pinch out,pinch out
+1156,9612,0,0,130,4,pinch out,pinch out
+1157,270,0,0,130,4,pinch out,pinch out
+1158,1271,0,0,130,4,pinch out,pinch out
+1159,7623,0,0,130,4,pinch out,pinch out
+1160,4043,0,0,130,4,pinch out,pinch out
+1161,3649,0,0,130,4,pinch out,pinch out
+1162,5226,0,0,130,4,pinch out,pinch out
+1163,2666,0,0,130,4,pinch out,pinch out
+1164,6911,0,0,130,4,pinch out,pinch out
+1165,8674,0,0,130,4,pinch out,pinch out
+1166,8950,0,0,130,4,pinch out,pinch out
+1167,7458,0,0,130,4,pinch out,pinch out
+1168,1452,0,0,130,4,pinch out,pinch out
+1169,2403,0,0,130,4,pinch out,pinch out
+1170,1076,0,0,130,4,pinch out,pinch out
+1171,5724,0,0,130,4,pinch out,pinch out
+1172,2334,0,0,130,4,pinch out,pinch out
+1173,2301,0,0,130,4,pinch out,pinch out
+1174,7968,0,0,130,4,pinch out,pinch out
+1175,4122,0,0,130,4,pinch out,pinch out
+1176,8167,0,0,130,4,pinch out,pinch out
+1177,5480,0,0,130,4,pinch out,pinch out
+1178,4788,0,0,130,4,pinch out,pinch out
+1179,3608,0,0,130,4,pinch out,pinch out
+1180,1011,0,0,130,4,pinch out,pinch out
+1181,1175,0,0,130,4,pinch out,pinch out
+1182,1732,0,0,130,4,pinch out,pinch out
+1183,1012,0,0,130,4,pinch out,pinch out
+1184,7152,0,0,130,4,pinch out,pinch out
+1185,5837,0,0,130,4,pinch out,pinch out
+1186,2404,0,0,130,4,pinch out,pinch out
+1187,8755,0,0,130,4,pinch out,pinch out
+1188,3566,0,0,130,4,pinch out,pinch out
+1189,8249,0,0,130,4,pinch out,pinch out
+1190,5629,0,0,130,4,pinch out,pinch out
+1191,152,0,0,130,4,pinch out,pinch out
+1192,6133,0,0,130,4,pinch out,pinch out
+1193,2915,0,0,130,4,pinch out,pinch out
+1194,5114,0,0,130,4,pinch out,pinch out
+1195,3244,0,0,130,4,pinch out,pinch out
+1196,5120,0,0,130,4,pinch out,pinch out
+1197,7692,0,0,130,4,pinch out,pinch out
+1198,817,0,0,130,4,pinch out,pinch out
+1199,327,0,0,130,4,pinch out,pinch out
+1200,531,0,0,130,4,pinch out,pinch out
+1201,9329,0,0,130,4,pinch out,pinch out
+1202,414,0,0,130,4,pinch out,pinch out
+1203,7177,0,0,130,4,pinch out,pinch out
+1204,755,0,0,130,4,pinch out,pinch out
+1205,5836,0,0,130,4,pinch out,pinch out
+1206,7840,0,0,130,4,pinch out,pinch out
+1207,4876,0,0,130,4,pinch out,pinch out
+1208,7259,0,0,130,4,pinch out,pinch out
+1209,3165,0,0,130,4,pinch out,pinch out
+1210,3844,0,0,130,4,pinch out,pinch out
+1211,2828,0,0,130,4,pinch out,pinch out
+1212,5227,0,0,130,4,pinch out,pinch out
+1213,3912,0,0,130,4,pinch out,pinch out
+1214,7178,0,0,130,4,pinch out,pinch out
+1215,8108,0,0,130,4,pinch out,pinch out
+1216,5372,0,0,130,4,pinch out,pinch out
+1217,3872,0,0,130,4,pinch out,pinch out
+1218,3048,0,0,130,4,pinch out,pinch out
+1219,193,0,0,130,4,pinch out,pinch out
+1220,2255,0,0,130,4,pinch out,pinch out
+1221,8247,0,0,130,4,pinch out,pinch out
+1222,7599,0,0,130,4,pinch out,pinch out
+1223,3663,0,0,130,4,pinch out,pinch out
+1224,1593,0,0,130,4,pinch out,pinch out
+1225,1944,0,0,130,4,pinch out,pinch out
+1226,2104,0,0,130,4,pinch out,pinch out
+1227,5112,0,0,130,4,pinch out,pinch out
+1228,9997,0,0,130,4,pinch out,pinch out
+1229,3970,0,0,130,4,pinch out,pinch out
+1230,1485,0,0,130,4,pinch out,pinch out
+1231,6846,0,0,130,4,pinch out,pinch out
+1232,442,0,0,130,4,pinch out,pinch out
+1233,1986,0,0,130,4,pinch out,pinch out
+1234,2168,0,0,130,4,pinch out,pinch out
+1235,6693,0,0,130,4,pinch out,pinch out
+1236,5991,0,0,130,4,pinch out,pinch out
+1237,707,0,0,130,4,pinch out,pinch out
+1238,6910,0,0,130,4,pinch out,pinch out
+1239,8243,0,0,130,4,pinch out,pinch out
+1240,5022,0,0,130,4,pinch out,pinch out
+1241,2997,0,0,130,4,pinch out,pinch out
+1242,2103,0,0,130,4,pinch out,pinch out
+1243,8009,0,0,130,4,pinch out,pinch out
+1244,3242,0,0,130,4,pinch out,pinch out
+1245,2511,0,0,130,4,pinch out,pinch out
+1246,8288,0,0,130,4,pinch out,pinch out
+1247,6061,0,0,130,4,pinch out,pinch out
+1248,1448,0,0,130,5,thumb double tap,thumb double tap
+1249,4203,0,0,130,5,thumb double tap,thumb double tap
+1250,3113,0,0,130,5,thumb double tap,thumb double tap
+1251,7619,0,0,130,5,thumb double tap,thumb double tap
+1252,1139,0,0,130,5,thumb double tap,thumb double tap
+1253,5759,0,0,130,5,thumb double tap,thumb double tap
+1254,7217,0,0,130,5,thumb double tap,thumb double tap
+1255,5368,0,0,130,5,thumb double tap,thumb double tap
+1256,1573,0,0,130,5,thumb double tap,thumb double tap
+1257,1757,0,0,130,5,thumb double tap,thumb double tap
+1258,8283,0,0,130,5,thumb double tap,thumb double tap
+1259,5178,0,0,130,5,thumb double tap,thumb double tap
+1260,9952,0,0,130,5,thumb double tap,thumb double tap
+1261,2593,0,0,130,5,thumb double tap,thumb double tap
+1262,2594,0,0,130,5,thumb double tap,thumb double tap
+1263,8325,0,0,130,5,thumb double tap,thumb double tap
+1264,8185,0,0,130,5,thumb double tap,thumb double tap
+1265,6569,0,0,130,5,thumb double tap,thumb double tap
+1266,8991,0,0,130,5,thumb double tap,thumb double tap
+1267,3258,0,0,130,5,thumb double tap,thumb double tap
+1268,6138,0,0,130,5,thumb double tap,thumb double tap
+1269,1401,0,0,130,5,thumb double tap,thumb double tap
+1270,8441,0,0,130,5,thumb double tap,thumb double tap
+1271,6217,0,0,130,5,thumb double tap,thumb double tap
+1272,4494,0,0,130,5,thumb double tap,thumb double tap
+1273,4763,0,0,130,5,thumb double tap,thumb double tap
+1274,1223,0,0,130,5,thumb double tap,thumb double tap
+1275,5813,0,0,130,5,thumb double tap,thumb double tap
+1276,837,0,0,130,5,thumb double tap,thumb double tap
+1277,8121,0,0,130,5,thumb double tap,thumb double tap
+1278,4799,0,0,130,5,thumb double tap,thumb double tap
+1279,390,0,0,130,5,thumb double tap,thumb double tap
+1280,9724,0,0,130,5,thumb double tap,thumb double tap
+1281,3615,0,0,130,5,thumb double tap,thumb double tap
+1282,6607,0,0,130,5,thumb double tap,thumb double tap
+1283,5222,0,0,130,5,thumb double tap,thumb double tap
+1284,1221,0,0,130,5,thumb double tap,thumb double tap
+1285,9799,0,0,130,5,thumb double tap,thumb double tap
+1286,5526,0,0,130,5,thumb double tap,thumb double tap
+1287,4228,0,0,130,5,thumb double tap,thumb double tap
+1288,1295,0,0,130,5,thumb double tap,thumb double tap
+1289,3782,0,0,130,5,thumb double tap,thumb double tap
+1290,1941,0,0,130,5,thumb double tap,thumb double tap
+1291,8662,0,0,130,5,thumb double tap,thumb double tap
+1292,9725,0,0,130,5,thumb double tap,thumb double tap
+1293,1247,0,0,130,5,thumb double tap,thumb double tap
+1294,668,0,0,130,5,thumb double tap,thumb double tap
+1295,3446,0,0,130,5,thumb double tap,thumb double tap
+1296,1293,0,0,130,5,thumb double tap,thumb double tap
+1297,6332,0,0,130,5,thumb double tap,thumb double tap
+1298,4016,0,0,130,5,thumb double tap,thumb double tap
+1299,9197,0,0,130,5,thumb double tap,thumb double tap
+1300,4427,0,0,130,5,thumb double tap,thumb double tap
+1301,1447,0,0,130,5,thumb double tap,thumb double tap
+1302,9594,0,0,130,5,thumb double tap,thumb double tap
+1303,1771,0,0,130,5,thumb double tap,thumb double tap
+1304,3848,0,0,130,5,thumb double tap,thumb double tap
+1305,9595,0,0,130,5,thumb double tap,thumb double tap
+1306,9812,0,0,130,5,thumb double tap,thumb double tap
+1307,776,0,0,130,5,thumb double tap,thumb double tap
+1308,3220,0,0,130,5,thumb double tap,thumb double tap
+1309,8661,0,0,130,5,thumb double tap,thumb double tap
+1310,2176,0,0,130,5,thumb double tap,thumb double tap
+1311,7617,0,0,130,5,thumb double tap,thumb double tap
+1312,4726,0,0,130,5,thumb double tap,thumb double tap
+1313,197,0,0,130,5,thumb double tap,thumb double tap
+1314,1107,0,0,130,5,thumb double tap,thumb double tap
+1315,1814,0,0,130,5,thumb double tap,thumb double tap
+1316,4638,0,0,130,5,thumb double tap,thumb double tap
+1317,7491,0,0,130,5,thumb double tap,thumb double tap
+1318,1981,0,0,130,5,thumb double tap,thumb double tap
+1319,6854,0,0,130,5,thumb double tap,thumb double tap
+1320,917,0,0,130,5,thumb double tap,thumb double tap
+1321,349,0,0,130,5,thumb double tap,thumb double tap
+1322,5180,0,0,130,5,thumb double tap,thumb double tap
+1323,141,0,0,130,5,thumb double tap,thumb double tap
+1324,7069,0,0,130,5,thumb double tap,thumb double tap
+1325,3528,0,0,130,5,thumb double tap,thumb double tap
+1326,6294,0,0,130,5,thumb double tap,thumb double tap
+1327,2361,0,0,130,5,thumb double tap,thumb double tap
+1328,9488,0,0,130,5,thumb double tap,thumb double tap
+1329,1138,0,0,130,5,thumb double tap,thumb double tap
+1330,1636,0,0,130,5,thumb double tap,thumb double tap
+1331,8992,0,0,130,5,thumb double tap,thumb double tap
+1332,3480,0,0,130,5,thumb double tap,thumb double tap
+1333,9278,0,0,130,5,thumb double tap,thumb double tap
+1334,3201,0,0,130,5,thumb double tap,thumb double tap
+1335,4066,0,0,130,5,thumb double tap,thumb double tap
+1336,5461,0,0,130,5,thumb double tap,thumb double tap
+1337,8045,0,0,130,5,thumb double tap,thumb double tap
+1338,69,0,0,130,5,thumb double tap,thumb double tap
+1339,8244,0,0,130,5,thumb double tap,thumb double tap
+1340,1108,0,0,130,5,thumb double tap,thumb double tap
+1341,9456,0,0,130,5,thumb double tap,thumb double tap
+1342,7618,0,0,130,5,thumb double tap,thumb double tap
+1343,5321,0,0,130,5,thumb double tap,thumb double tap
+1344,7796,0,0,130,5,thumb double tap,thumb double tap
+1345,4878,0,0,130,5,thumb double tap,thumb double tap
+1346,5786,0,0,130,5,thumb double tap,thumb double tap
+1347,5757,0,0,130,5,thumb double tap,thumb double tap
+1348,3349,0,0,130,5,thumb double tap,thumb double tap
+1349,8366,0,0,130,5,thumb double tap,thumb double tap
+1350,6271,0,0,130,5,thumb double tap,thumb double tap
+1351,2764,0,0,130,5,thumb double tap,thumb double tap
+1352,9563,0,0,130,5,thumb double tap,thumb double tap
+1353,524,0,0,130,5,thumb double tap,thumb double tap
+1354,1169,0,0,130,5,thumb double tap,thumb double tap
+1355,6681,0,0,130,5,thumb double tap,thumb double tap
+1356,7676,0,0,130,5,thumb double tap,thumb double tap
+1357,467,0,0,130,5,thumb double tap,thumb double tap
+1358,4636,0,0,130,5,thumb double tap,thumb double tap
+1359,1109,0,0,130,5,thumb double tap,thumb double tap
+1360,2264,0,0,130,5,thumb double tap,thumb double tap
+1361,5247,0,0,130,5,thumb double tap,thumb double tap
+1362,3153,0,0,130,5,thumb double tap,thumb double tap
+1363,3070,0,0,130,5,thumb double tap,thumb double tap
+1364,6787,0,0,130,5,thumb double tap,thumb double tap
+1365,6330,0,0,130,5,thumb double tap,thumb double tap
+1366,8078,0,0,130,5,thumb double tap,thumb double tap
+1367,4929,0,0,130,5,thumb double tap,thumb double tap
+1368,6547,0,0,130,5,thumb double tap,thumb double tap
+1369,9076,0,0,130,5,thumb double tap,thumb double tap
+1370,5320,0,0,130,5,thumb double tap,thumb double tap
+1371,4761,0,0,130,5,thumb double tap,thumb double tap
+1372,6788,0,0,130,5,thumb double tap,thumb double tap
+1373,19,0,0,130,5,thumb double tap,thumb double tap
+1374,3965,0,0,130,5,thumb double tap,thumb double tap
+1375,9723,0,0,130,5,thumb double tap,thumb double tap
+1376,6368,0,0,130,5,thumb double tap,thumb double tap
+1377,4840,0,0,130,5,thumb double tap,thumb double tap
+1378,2023,0,0,130,5,thumb double tap,thumb double tap
+1379,2554,0,0,130,5,thumb double tap,thumb double tap
+1380,1308,0,0,130,5,thumb double tap,thumb double tap
+1381,2478,0,0,130,5,thumb double tap,thumb double tap
+1382,7350,0,0,130,5,thumb double tap,thumb double tap
+1383,10000,0,0,130,5,thumb double tap,thumb double tap
+1384,6853,0,0,130,5,thumb double tap,thumb double tap
+1385,1222,0,0,130,5,thumb double tap,thumb double tap
+1386,6546,0,0,130,5,thumb double tap,thumb double tap
+1387,2763,0,0,130,5,thumb double tap,thumb double tap
+1388,9457,0,0,130,5,thumb double tap,thumb double tap
+1389,1770,0,0,130,5,thumb double tap,thumb double tap
+1390,1061,0,0,130,5,thumb double tap,thumb double tap
+1391,9130,0,0,130,5,thumb double tap,thumb double tap
+1392,9362,0,0,130,5,thumb double tap,thumb double tap
+1393,9388,0,0,130,5,thumb double tap,thumb double tap
+1394,1488,0,0,130,5,thumb double tap,thumb double tap
+1395,985,0,0,130,5,thumb double tap,thumb double tap
+1396,3929,0,0,130,5,thumb double tap,thumb double tap
+1397,8814,0,0,130,5,thumb double tap,thumb double tap
+1398,2262,0,0,130,5,thumb double tap,thumb double tap
+1399,9196,0,0,130,5,thumb double tap,thumb double tap
+1400,6760,0,0,130,5,thumb double tap,thumb double tap
+1401,5405,0,0,130,5,thumb double tap,thumb double tap
+1402,4930,0,0,130,5,thumb double tap,thumb double tap
+1403,9166,0,0,130,5,thumb double tap,thumb double tap
+1404,4662,0,0,130,7,ungrab,ungrab
+1405,9381,0,0,130,7,ungrab,ungrab
+1406,79,0,0,130,7,ungrab,ungrab
+1407,9326,0,0,130,7,ungrab,ungrab
+1408,7690,0,0,130,7,ungrab,ungrab
+1409,4354,0,0,130,7,ungrab,ungrab
+1410,719,0,0,130,7,ungrab,ungrab
+1411,9823,0,0,130,7,ungrab,ungrab
+1412,2220,0,0,130,7,ungrab,ungrab
+1413,5263,0,0,130,7,ungrab,ungrab
+1414,9081,0,0,130,7,ungrab,ungrab
+1415,4720,0,0,130,7,ungrab,ungrab
+1416,2563,0,0,130,7,ungrab,ungrab
+1417,4831,0,0,130,7,ungrab,ungrab
+1418,8958,0,0,130,7,ungrab,ungrab
+1419,8226,0,0,130,7,ungrab,ungrab
+1420,956,0,0,130,7,ungrab,ungrab
+1421,5888,0,0,130,7,ungrab,ungrab
+1422,2782,0,0,130,7,ungrab,ungrab
+1423,7931,0,0,130,7,ungrab,ungrab
+1424,3148,0,0,130,7,ungrab,ungrab
+1425,794,0,0,130,7,ungrab,ungrab
+1426,7261,0,0,130,7,ungrab,ungrab
+1427,6186,0,0,130,7,ungrab,ungrab
+1428,906,0,0,130,7,ungrab,ungrab
+1429,1568,0,0,130,7,ungrab,ungrab
+1430,8421,0,0,130,7,ungrab,ungrab
+1431,6570,0,0,130,7,ungrab,ungrab
+1432,4814,0,0,130,7,ungrab,ungrab
+1433,1405,0,0,130,7,ungrab,ungrab
+1434,6327,0,0,130,7,ungrab,ungrab
+1435,5197,0,0,130,7,ungrab,ungrab
+1436,10032,0,0,130,7,ungrab,ungrab
+1437,2783,0,0,130,7,ungrab,ungrab
+1438,9514,0,0,130,7,ungrab,ungrab
+1439,5751,0,0,130,7,ungrab,ungrab
+1440,5366,0,0,130,7,ungrab,ungrab
+1441,6465,0,0,130,7,ungrab,ungrab
+1442,9646,0,0,130,7,ungrab,ungrab
+1443,1208,0,0,130,7,ungrab,ungrab
+1444,1661,0,0,130,7,ungrab,ungrab
+1445,6188,0,0,130,7,ungrab,ungrab
+1446,10033,0,0,130,7,ungrab,ungrab
+1447,2995,0,0,130,7,ungrab,ungrab
+1448,7384,0,0,130,7,ungrab,ungrab
+1449,1472,0,0,130,7,ungrab,ungrab
+1450,6814,0,0,130,7,ungrab,ungrab
+1451,1431,0,0,130,7,ungrab,ungrab
+1452,3225,0,0,130,7,ungrab,ungrab
+1453,6082,0,0,130,7,ungrab,ungrab
+1454,2292,0,0,130,7,ungrab,ungrab
+1455,5523,0,0,130,7,ungrab,ungrab
+1456,2484,0,0,130,7,ungrab,ungrab
+1457,1287,0,0,130,7,ungrab,ungrab
+1458,4367,0,0,130,7,ungrab,ungrab
+1459,3156,0,0,130,7,ungrab,ungrab
+1460,5593,0,0,130,7,ungrab,ungrab
+1461,4300,0,0,130,7,ungrab,ungrab
+1462,7218,0,0,130,7,ungrab,ungrab
+1463,1406,0,0,130,7,ungrab,ungrab
+1464,7836,0,0,130,7,ungrab,ungrab
+1465,7341,0,0,130,7,ungrab,ungrab
+1466,9551,0,0,130,7,ungrab,ungrab
+1467,4265,0,0,130,7,ungrab,ungrab
+1468,8182,0,0,130,7,ungrab,ungrab
+1469,402,0,0,130,7,ungrab,ungrab
+1470,742,0,0,130,7,ungrab,ungrab
+1471,2111,0,0,130,7,ungrab,ungrab
+1472,8064,0,0,130,7,ungrab,ungrab
+1473,827,0,0,130,7,ungrab,ungrab
+1474,741,0,0,130,7,ungrab,ungrab
+1475,8006,0,0,130,7,ungrab,ungrab
+1476,9364,0,0,130,7,ungrab,ungrab
+1477,4120,0,0,130,7,ungrab,ungrab
+1478,382,0,0,130,7,ungrab,ungrab
+1479,717,0,0,130,7,ungrab,ungrab
+1480,5886,0,0,130,7,ungrab,ungrab
+1481,8772,0,0,130,7,ungrab,ungrab
+1482,1829,0,0,130,7,ungrab,ungrab
+1483,1,0,0,130,7,ungrab,ungrab
+1484,9965,0,0,130,7,ungrab,ungrab
+1485,1752,0,0,130,7,ungrab,ungrab
+1486,5029,0,0,130,7,ungrab,ungrab
+1487,9757,0,0,130,7,ungrab,ungrab
+1488,3494,0,0,130,7,ungrab,ungrab
+1489,6136,0,0,130,7,ungrab,ungrab
+1490,6545,0,0,130,7,ungrab,ungrab
+1491,5847,0,0,130,7,ungrab,ungrab
+1492,4700,0,0,130,7,ungrab,ungrab
+1493,3389,0,0,130,7,ungrab,ungrab
+1494,3278,0,0,130,7,ungrab,ungrab
+1495,1627,0,0,130,7,ungrab,ungrab
+1496,5570,0,0,130,7,ungrab,ungrab
+1497,2686,0,0,130,7,ungrab,ungrab
+1498,3962,0,0,130,7,ungrab,ungrab
+1499,3778,0,0,130,7,ungrab,ungrab
+1500,1010,0,0,130,7,ungrab,ungrab
+1501,8065,0,0,130,7,ungrab,ungrab
+1502,1433,0,0,130,7,ungrab,ungrab
+1503,8503,0,0,130,7,ungrab,ungrab
+1504,7146,0,0,130,7,ungrab,ungrab
+1505,6808,0,0,130,7,ungrab,ungrab
+1506,8423,0,0,130,7,ungrab,ungrab
+1507,2416,0,0,130,7,ungrab,ungrab
+1508,8350,0,0,130,7,ungrab,ungrab
+1509,4301,0,0,130,7,ungrab,ungrab
+1510,6690,0,0,130,7,ungrab,ungrab
+1511,8854,0,0,130,7,ungrab,ungrab
+1512,9132,0,0,130,7,ungrab,ungrab
+1513,2052,0,0,130,7,ungrab,ungrab
+1514,9382,0,0,130,7,ungrab,ungrab
+1515,1853,0,0,130,7,ungrab,ungrab
+1516,2053,0,0,130,7,ungrab,ungrab
+1517,9869,0,0,130,7,ungrab,ungrab
+1518,1321,0,0,130,7,ungrab,ungrab
+1519,7519,0,0,130,7,ungrab,ungrab
+1520,1008,0,0,130,7,ungrab,ungrab
+1521,4765,0,0,130,7,ungrab,ungrab
+1522,4764,0,0,130,7,ungrab,ungrab
+1523,3358,0,0,130,7,ungrab,ungrab
+1524,6723,0,0,130,7,ungrab,ungrab
+1525,148,0,0,130,7,ungrab,ungrab
+1526,4155,0,0,130,7,ungrab,ungrab
+1527,7838,0,0,130,7,ungrab,ungrab
+1528,8624,0,0,130,7,ungrab,ungrab
+1529,526,0,0,130,7,ungrab,ungrab
+1530,9730,0,0,130,7,ungrab,ungrab
+1531,8812,0,0,130,7,ungrab,ungrab
+1532,8934,0,0,130,7,ungrab,ungrab
+1533,6108,0,0,130,7,ungrab,ungrab
+1534,4813,0,0,130,7,ungrab,ungrab
+1535,9515,0,0,130,7,ungrab,ungrab
+1536,4953,0,0,130,7,ungrab,ungrab
+1537,233,0,0,130,7,ungrab,ungrab
+1538,6300,0,0,130,7,ungrab,ungrab
+1539,232,0,0,130,7,ungrab,ungrab
+1540,9156,0,0,130,7,ungrab,ungrab
+1541,8025,0,0,130,7,ungrab,ungrab
+1542,187,0,0,130,7,ungrab,ungrab
+1543,5286,0,0,130,7,ungrab,ungrab
+1544,5889,0,0,130,7,ungrab,ungrab
+1545,8710,0,0,130,7,ungrab,ungrab
+1546,3193,0,0,130,7,ungrab,ungrab
+1547,4536,0,0,130,7,ungrab,ungrab
+1548,6990,0,0,130,7,ungrab,ungrab
+1549,1320,0,0,130,7,ungrab,ungrab
+1550,9902,0,0,130,7,ungrab,ungrab
+1551,1979,0,0,130,7,ungrab,ungrab
+1552,596,0,0,130,7,ungrab,ungrab
+1553,9041,0,0,130,7,ungrab,ungrab
+1554,4157,0,0,130,7,ungrab,ungrab
+1555,907,0,0,130,7,ungrab,ungrab
+1556,7147,0,0,130,7,ungrab,ungrab
+1557,2906,0,0,130,7,ungrab,ungrab
+1558,2485,0,0,130,7,ungrab,ungrab
+1559,2027,0,0,130,7,ungrab,ungrab

@@ -1,0 +1,13 @@
+# 데이터 로드 예시 코드
+data = np.load('데이터경로/데이터파일명_data.npz')
+
+# 개별 데이터 접근
+X_train = data['X_train']
+X_valid = data['X_valid']
+X_test = data['X_test']
+y_train = data['y_train']
+y_valid = data['y_valid']
+y_test = data['y_test']
+label_to_idx = data['label_to_idx'][0].item()
+train_indices = data['train_indices']
+valid_indices = data['valid_indices']

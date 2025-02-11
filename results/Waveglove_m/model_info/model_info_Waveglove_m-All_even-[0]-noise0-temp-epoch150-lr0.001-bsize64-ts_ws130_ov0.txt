@@ -1,0 +1,120 @@
+Experiment Name: Waveglove_m-All_even-[0]-noise0-temp-epoch150-lr0.001-bsize64-ts_ws130_ov0
+Model Architecture: projDil3Resnet3_2d
+Total Parameters: 131,658
+Trainable Parameters: 131,658
+Model Size: 0.50 MB
+
+Model Structure:
+projDil3Resnet3_2d(
+  (conv1): Conv2d(1, 32, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+  (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=(3, 1), stride=(2, 1), padding=(1, 0), dilation=1, ceil_mode=False)
+  (dil_conv1): MultiDilatedConv2d(
+    (dilated_convs): ModuleList(
+      (0): Conv2d(32, 5, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+      (1): Conv2d(32, 5, kernel_size=(5, 1), stride=(1, 1), padding=(6, 0), dilation=(3, 1), bias=False)
+      (2): Conv2d(32, 5, kernel_size=(5, 1), stride=(1, 1), padding=(10, 0), dilation=(5, 1), bias=False)
+      (3): Conv2d(32, 5, kernel_size=(5, 1), stride=(1, 1), padding=(14, 0), dilation=(7, 1), bias=False)
+      (4): Conv2d(32, 5, kernel_size=(5, 1), stride=(1, 1), padding=(18, 0), dilation=(9, 1), bias=False)
+      (5): Conv2d(32, 5, kernel_size=(5, 1), stride=(1, 1), padding=(22, 0), dilation=(11, 1), bias=False)
+    )
+    (final_conv): Conv2d(30, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  )
+  (dil_bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dil_conv2): MultiDilatedConv2d(
+    (dilated_convs): ModuleList(
+      (0): Conv2d(32, 5, kernel_size=(3, 1), stride=(2, 1), padding=(1, 0), bias=False)
+      (1): Conv2d(32, 5, kernel_size=(3, 1), stride=(2, 1), padding=(3, 0), dilation=(3, 1), bias=False)
+      (2): Conv2d(32, 5, kernel_size=(3, 1), stride=(2, 1), padding=(5, 0), dilation=(5, 1), bias=False)
+      (3): Conv2d(32, 5, kernel_size=(3, 1), stride=(2, 1), padding=(7, 0), dilation=(7, 1), bias=False)
+      (4): Conv2d(32, 5, kernel_size=(3, 1), stride=(2, 1), padding=(9, 0), dilation=(9, 1), bias=False)
+      (5): Conv2d(32, 5, kernel_size=(3, 1), stride=(2, 1), padding=(11, 0), dilation=(11, 1), bias=False)
+    )
+    (final_conv): Conv2d(30, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  )
+  (down_sample): Sequential(
+    (0): Conv2d(32, 32, kernel_size=(1, 1), stride=(2, 1))
+    (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (res_block2): Dil3ResidualBlock2d(
+    (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace=True)
+    (conv1): MultiDilatedConv2d(
+      (dilated_convs): ModuleList(
+        (0): Conv2d(32, 10, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+        (1): Conv2d(32, 10, kernel_size=(5, 1), stride=(1, 1), padding=(6, 0), dilation=(3, 1), bias=False)
+        (2): Conv2d(32, 10, kernel_size=(5, 1), stride=(1, 1), padding=(10, 0), dilation=(5, 1), bias=False)
+        (3): Conv2d(32, 10, kernel_size=(5, 1), stride=(1, 1), padding=(14, 0), dilation=(7, 1), bias=False)
+        (4): Conv2d(32, 10, kernel_size=(5, 1), stride=(1, 1), padding=(18, 0), dilation=(9, 1), bias=False)
+        (5): Conv2d(32, 10, kernel_size=(5, 1), stride=(1, 1), padding=(22, 0), dilation=(11, 1), bias=False)
+      )
+      (final_conv): Conv2d(60, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (conv2): MultiDilatedConv2d(
+      (dilated_convs): ModuleList(
+        (0): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+        (1): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(6, 0), dilation=(3, 1), bias=False)
+        (2): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(10, 0), dilation=(5, 1), bias=False)
+        (3): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(14, 0), dilation=(7, 1), bias=False)
+        (4): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(18, 0), dilation=(9, 1), bias=False)
+        (5): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(22, 0), dilation=(11, 1), bias=False)
+      )
+      (final_conv): Conv2d(60, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (conv3): MultiDilatedConv2d(
+      (dilated_convs): ModuleList(
+        (0): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(1, 0), bias=False)
+        (1): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(3, 0), dilation=(3, 1), bias=False)
+        (2): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(5, 0), dilation=(5, 1), bias=False)
+        (3): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(7, 0), dilation=(7, 1), bias=False)
+        (4): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(9, 0), dilation=(9, 1), bias=False)
+        (5): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(11, 0), dilation=(11, 1), bias=False)
+      )
+      (final_conv): Conv2d(60, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (down_sample): Conv2d(32, 64, kernel_size=(1, 1), stride=(2, 1))
+  )
+  (res_block3): Dil3ResidualBlock2d(
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace=True)
+    (conv1): MultiDilatedConv2d(
+      (dilated_convs): ModuleList(
+        (0): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+        (1): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(6, 0), dilation=(3, 1), bias=False)
+        (2): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(10, 0), dilation=(5, 1), bias=False)
+        (3): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(14, 0), dilation=(7, 1), bias=False)
+        (4): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(18, 0), dilation=(9, 1), bias=False)
+        (5): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(22, 0), dilation=(11, 1), bias=False)
+      )
+      (final_conv): Conv2d(60, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (conv2): MultiDilatedConv2d(
+      (dilated_convs): ModuleList(
+        (0): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(2, 0), bias=False)
+        (1): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(6, 0), dilation=(3, 1), bias=False)
+        (2): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(10, 0), dilation=(5, 1), bias=False)
+        (3): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(14, 0), dilation=(7, 1), bias=False)
+        (4): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(18, 0), dilation=(9, 1), bias=False)
+        (5): Conv2d(64, 10, kernel_size=(5, 1), stride=(1, 1), padding=(22, 0), dilation=(11, 1), bias=False)
+      )
+      (final_conv): Conv2d(60, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (conv3): MultiDilatedConv2d(
+      (dilated_convs): ModuleList(
+        (0): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(1, 0), bias=False)
+        (1): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(3, 0), dilation=(3, 1), bias=False)
+        (2): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(5, 0), dilation=(5, 1), bias=False)
+        (3): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(7, 0), dilation=(7, 1), bias=False)
+        (4): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(9, 0), dilation=(9, 1), bias=False)
+        (5): Conv2d(64, 10, kernel_size=(3, 1), stride=(2, 1), padding=(11, 0), dilation=(11, 1), bias=False)
+      )
+      (final_conv): Conv2d(60, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (down_sample): Conv2d(64, 64, kernel_size=(1, 1), stride=(2, 1))
+  )
+  (gap): AdaptiveAvgPool2d(output_size=(1, 1))
+  (linear): Linear(in_features=64, out_features=10, bias=True)
+)

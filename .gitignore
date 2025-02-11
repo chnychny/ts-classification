@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+results/Waveglove_m/checkpoints/
+
+loop_cls_results/Waveglove_m/checkpoints/
+loop_cls_results/Waveglove_m/exp_data/
 
 # C extensions
 *.so
