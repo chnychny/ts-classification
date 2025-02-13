@@ -14,6 +14,7 @@ from utils.training_tools import evaluate
 from utils.training_tools import train_epoch, get_model_size
 from utils.utils import create_experiment_dirs  #
 from models.att_resnet2d import projDil3Resnet3_2d
+from models.projDilResTransformer_rev import ImprovedProjDilResTransformer2
 from utils.training_tools_revised import train_epoch_revised
 from dataprovider.data_import_combine import data_import_combine
 from datetime import datetime
@@ -22,8 +23,8 @@ from sklearn.model_selection import train_test_split
 def train_model(label_to_idx):
     # 모델 설정
 
-   # model = ImprovedProjDilResT/ransformer2(in_channels=1, output_channel=64, num_classes=num_classes, stride=2).to(device)
-    model = projDil3Resnet3_2d(in_channels=X_train_split.shape[2], output_channel=64, num_classes=num_classes, stride=2).to(device)
+    model = ImprovedProjDilResTransformer2(in_channels=1, output_channel=64, num_classes=num_classes, stride=2).to(device)
+    # model = projDil3Resnet3_2d(in_channels=X_train_split.shape[2], output_channel=64, num_classes=num_classes, stride=2).to(device)
     optimizer = optim.AdamW(
         model.parameters(),
         lr=lr,
@@ -157,28 +158,29 @@ if __name__ == "__main__":
     label_column='bearing_condition'
     dim_type='time_domain'
     
-    # data_type = "PHM_Gearbox_spur" 
-    # condition='All_load_even' # laad (diff_high - high로 테스트)
-    # test_condition=[50] # speed select
-    # noise_level=2
-
+    data_type = "PHM_Gearbox_spur" 
+    condition='All_load_even' # laad (diff_high - high로 테스트)
+    test_condition=[50] # speed select
+    noise_level=2
+    window_size = 1024
+    overlap = 0
     # data_type = "UOS_RTES_deep_groove_ball_bearing"
     # condition = "Compound_fault_total"
     # test_condition = [800]
     # noise_level = 0
 
 
-    window_size = 130
-    overlap = 0
-    
-    suffix = f'ts_ws{window_size}_ov{overlap}'
 
 # waveglove
-    label_column= 'y'# waveglove
-    data_type = "Waveglove_m"
-    condition='All_even'
-    test_condition=[0]
-    noise_level= 0
+    # label_column= 'y'# waveglove
+    # data_type = "Waveglove_m"
+    # condition='All_even'
+    # test_condition=[0]
+    # noise_level= 0
+    # window_size = 130
+    # overlap = 0
+    
+    suffix = f'ts_ws{window_size}_ov{overlap}'
     
     
     # 학습 파라미터 설정
