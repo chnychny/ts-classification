@@ -1,0 +1,422 @@
+import torch
+import numpy as np
+import pandas as pd
+import sys, os
+from pathlib import Path
+project_root = Path(__file__).parent
+sys.path.append(str(project_root))
+print(project_root)
+from sklearn.model_selection import train_test_split
+from dataprovider.SNUWaveGlove import SNUWaveGloveDataProcessor, SNUWaveGloveDataLoader
+from sklearn.manifold import TSNE
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
+def analyze_feature_importance(x_data, y_data, feature_names=None):
+    """
+    Random Forest를 사용하여 feature 중요도를 분석하는 함수
+    
+    Parameters:
+    -----------
+    x_data : numpy.ndarray
+        shape: [n_samples, time_steps, n_channels]
+    y_data : numpy.ndarray
+        shape: [n_samples]
+    feature_names : list
+        채널 이름 리스트
+    """
+    n_samples, time_steps, n_channels = x_data.shape
+    
+    # 데이터 reshape: [n_samples, time_steps * n_channels] # 다사용용
+    X_reshaped = x_data.reshape(n_samples, -1)
+    # 데이터 reshape: [n_samples, mean(time_steps) * n_channels]
+    X_reshaped_time = x_data.mean(axis=1)
+    # Random Forest 학습
+    rf = RandomForestClassifier(n_estimators=100, random_state=42)
+    rf.fit(X_reshaped_time, y_data.ravel())
+    
+    #
+    channel_importance = np.zeros(n_channels)
+    # 채널별 중요도 계산 (X_reshaped사용했을때때)
+    # for i in range(n_channels):
+    #     # 각 채널의 time_steps에 대한 중요도 평균
+    #     start_idx = i * time_steps
+    #     end_idx = (i + 1) * time_steps
+    #     channel_importance[i] = np.mean(rf.feature_importances_[start_idx:end_idx])
+    # 채널 평균을 넣어서 X_reshaped_time 채널 중요도 계산
+    channel_importance = rf.feature_importances_
+        
+    # 결과를 DataFrame으로 정리
+    if feature_names is None:
+        feature_names = [f'Channel_{i}' for i in range(n_channels)]
+    
+    importance_df = pd.DataFrame({
+        'Channel': feature_names,
+        'Importance': channel_importance
+    })
+    
+    # 중요도 순으로 정렬
+    importance_df = importance_df.sort_values('Importance', ascending=False)
+    
+    # 결과 출력
+    print("Top 10 most important channels (time_steps mean):")
+    print(importance_df.head(10))
+    
+    # 시각화
+    plt.figure(figsize=(12, 6))
+    sns.barplot(data=importance_df.head(20), x='Importance', y='Channel')
+    plt.title('Top 20 Most Important Channels time_steps mean frame '+str(seg_cut))
+    plt.tight_layout()
+    plt.savefig(base_path+'/combined_figure/Top 20 Most Important Channels Average Time_steps frame '+str(seg_cut)+'.png')
+    plt.close()
+    return importance_df
+def plot_tsne_by_channels(x_data, y_data, channel_ranges=None, save_path=None):
+    """
+    특정 채널 범위에 대한 TSNE 시각화를 수행하는 함수
+    
+    Parameters:
+    -----------
+    x_data : numpy.ndarray
+        shape: [n_samples, data_length, n_channels]
+    y_data : numpy.ndarray
+        shape: [n_samples]
+    channel_ranges : list of tuple
+        분석할 채널 범위 리스트
+    """
+    print(f"Input x_data shape: {x_data.shape}")
+    n_samples, data_length, n_channels = x_data.shape
+    
+    # 기본 채널 범위 설정
+    if channel_ranges is None:
+        channel_ranges = [(0, n_channels)]
+    
+    # perplexity 값 설정
+    perplexity = min(30, n_samples - 1)
+    print(f"Number of samples: {n_samples}, Using perplexity: {perplexity}")
+    
+    n_ranges = len(channel_ranges)
+    fig, axes = plt.subplots(1, n_ranges, figsize=(7*n_ranges, 6))
+    if n_ranges == 1:
+        axes = [axes]
+    
+    # 색상 설정
+    unique_labels = np.unique(y_data)
+    colors = plt.cm.rainbow(np.linspace(0, 1, len(unique_labels)))
+    color_dict = dict(zip(unique_labels, colors))
+    
+    for idx, ((start_ch, end_ch), ax) in enumerate(zip(channel_ranges, axes)):
+        # 선택된 채널의 데이터를 2D로 재구성
+        # [n_samples, data_length, selected_channels] -> [n_samples, data_length * selected_channels]
+        X_selected = x_data[:, :, start_ch:end_ch]
+        X_reshaped = X_selected.reshape(n_samples, -1)
+        
+        # TSNE 수행
+        tsne = TSNE(
+            n_components=2,
+            perplexity=perplexity,
+            random_state=42,
+            n_iter=1000,
+            learning_rate='auto'
+        )
+        X_tsne = tsne.fit_transform(X_reshaped)
+        
+        # 산점도 그리기
+        for label in unique_labels:
+            indices = np.where(y_data == label)[0]
+            tsne_label = X_tsne[indices]
+            ax.scatter(tsne_label[:, 0], tsne_label[:, 1], 
+                      c=[color_dict[label]], 
+                      label=f'Label {label}',
+                      alpha=0.6)
+        
+        ax.set_title(f'TSNE for channels {start_ch}-{end_ch}\n(n_samples={n_samples}, perp={perplexity})')
+        ax.legend()
+        ax.grid(True, alpha=0.3)
+    
+    plt.tight_layout()
+    plt.savefig(save_path+'Tsne_ch_'+str(start_ch)+'-'+str(end_ch)+'.png')
+    plt.close()
+
+## start 
+base_dir = "/gpfs/home1/chny1216/ts-classification/"
+save_path = str(project_root)
+dim_type='time_domain'
+
+# SNU waveglove
+label_column= 'label'# waveglove
+data_type = "SNUWG_Rkeyboard"
+condition = 'All_even'
+seg_cut = 30
+
+# 데이터 로드 /gpfs/home1/chny1216/data/SNU-WaveGlove/dataset_keyboard_250403/
+data_path = "/gpfs/home1/chny1216/data/SNU-WaveGlove/dataset_keyboard_250403/"
+f_list = os.listdir(data_path)
+local_dir = data_path
+base_path = str(project_root)
+
+# 데이터 처리
+stacked_data, metadata_df = SNUWaveGloveDataProcessor.process_files_with_origin_time_domain(local_dir, f_list, data_type, seg_cut)
+df = metadata_df.copy()
+unit_data = {
+    'unit': df['f_list'] + '-' + df['label'].astype(str) + '-' + df['seg_idx'].astype(str)
+}
+# 3. 한 번에 컬럼 추가
+df = pd.concat([df, pd.DataFrame(unit_data)], axis=1)
+
+# # 데이터 분할 (f_list 기준)
+# train_mask = df['f_list'] != 'log_seq_4'
+# test_mask = df['f_list'] == 'log_seq_4'
+
+# # train/test 데이터셋 생성
+# train_units = df[train_mask]['unit'].unique()
+# test_units = df[test_mask]['unit'].unique()
+# 각 레이블별로 20%를 테스트 세트로 분할
+train_units = []
+test_units = []
+
+np.random.seed(42)  # 재현성을 위한 시드 설정
+# 레이블별로 분할
+for label in df['label'].unique():
+    label_units = df[df['label'] == label]['unit'].unique()
+    n_test = int(len(label_units) * 0.2)  # 20%를 테스트 세트로
+    
+    # 무작위로 테스트 세트 선택
+    
+    test_units_for_label = np.random.choice(label_units, size=n_test, replace=False)
+    train_units_for_label = np.array([u for u in label_units if u not in test_units_for_label])
+    
+    train_units.extend(train_units_for_label)
+    test_units.extend(test_units_for_label)
+# train 데이터 준비
+train_units_by_label = {}
+# 레이블별로 unit 분류
+for unit in train_units:
+    label = df[df['unit'] == unit]['label'].unique()[0]
+    if label not in train_units_by_label:
+        train_units_by_label[label] = []
+    train_units_by_label[label].append(unit)
+
+# 각 레이블별 최소 샘플 수 찾기
+min_samples = min(len(units) for units in train_units_by_label.values())
+print(f"\nTrain set - Samples per label before balancing:")
+for label, units in train_units_by_label.items():
+    print(f"Label {label}: {len(units)} samples")
+print(f"Minimum samples per label: {min_samples}")
+
+# 균형잡힌 데이터셋 생성
+balanced_train_data = []
+balanced_train_labels = []
+
+for label, units in train_units_by_label.items():
+    # 각 레이블에서 무작위로 min_samples만큼 선택
+    selected_units = np.random.choice(units, min_samples, replace=False)
+    
+    for unit in selected_units:
+        df_unit = df[df['unit'] == unit].copy()
+        df_unit = df_unit.sort_values('idx')
+        x_temp = df_unit[[col for col in df_unit.columns if col.startswith(('raw_acc', 'raw_gyr', 'joint_pos', 'joint_angles'))]].to_numpy()
+        balanced_train_data.append(x_temp)
+        balanced_train_labels.append(label)
+
+# test 데이터 준비
+test_units_by_label = {}
+for unit in test_units:
+    label = df[df['unit'] == unit]['label'].unique()[0]
+    if label not in test_units_by_label:
+        test_units_by_label[label] = []
+    test_units_by_label[label].append(unit)
+
+min_test_samples = min(len(units) for units in test_units_by_label.values())
+print(f"\nTest set - Samples per label before balancing:")
+for label, units in test_units_by_label.items():
+    print(f"Label {label}: {len(units)} samples")
+print(f"Minimum test samples per label: {min_test_samples}")
+
+balanced_test_data = []
+balanced_test_labels = []
+
+for label, units in test_units_by_label.items():
+    selected_units = np.random.choice(units, min_test_samples, replace=False)
+    
+    for unit in selected_units:
+        df_unit = df[df['unit'] == unit].copy()
+        df_unit = df_unit.sort_values('idx')
+        x_temp = df_unit[[col for col in df_unit.columns if col.startswith(('raw_acc', 'raw_gyr', 'joint_pos', 'joint_angles'))]].to_numpy()
+        balanced_test_data.append(x_temp)
+        balanced_test_labels.append(label)
+
+# 레이블 매핑 정의
+# label_mapping = {
+#     1: 1,   # 1 -> 1
+#     2: 2,   # 2 -> 2
+#     3: 2,   # 3 -> 2
+#     4: 4,   # 4 -> 4
+#     5: 5,   # 5 -> 5
+#     6: 5,   # 6 -> 5
+#     7: 7,   # 7 -> 7
+#     8: 8,   # 8 -> 8
+#     9: 8,   # 9 -> 8
+#     10: 10, # 10 -> 10
+#     11: 11, # 11 -> 11
+#     12: 11  # 12 -> 11
+# }
+
+# numpy array로 변환 및 레이블 매핑 적용
+X_train = np.stack(balanced_train_data, axis=0)
+y_train = np.array(balanced_train_labels)#np.array([label_mapping[label] for label in balanced_train_labels])
+X_test = np.stack(balanced_test_data, axis=0)
+y_test = np.array(balanced_test_labels)#np.array([label_mapping[label] for label in balanced_test_labels])
+
+print("\n최종 데이터셋 형태:")
+print(f"X_train shape: {X_train.shape}")
+print(f"X_test shape: {X_test.shape}")
+print(f"y_train shape: {y_train.shape}")
+print(f"y_test shape: {y_test.shape}")
+
+
+# 레이블 분포 확인
+print("\n학습 데이터 레이블 분포:")
+for label in np.unique(y_train):
+    print(f"Label {label}: {np.sum(y_train == label)}")
+
+print("\n테스트 데이터 레이블 분포:")
+for label in np.unique(y_test):
+    print(f"Label {label}: {np.sum(y_test == label)}")
+
+# 데이터 reshape (시간 축 평균)
+X_train_mean = X_train.mean(axis=1)
+X_test_mean = X_test.mean(axis=1)
+# data 선택
+sensor_types = {
+    'Accelerometer': (0, 33),    # 0-32 (33개 채널)
+    'Gyroscope': (33, 66),      # 33-65 (33개 채널)
+    'Joint Position': (66, 114), # 66-113 (48개 채널)
+    'Joint Angles': (114, 178)   # 114-177 (64개 채널)
+}
+
+# # Accelerometer 데이터만 선택 (시간 축 평균)
+# acc_start, acc_end = sensor_types['Accelerometer']
+# X_train_mean = X_train.mean(axis=1)[:, acc_start:acc_end]  # Accelerometer 채널만 선택
+# X_test_mean = X_test.mean(axis=1)[:, acc_start:acc_end]    # Accelerometer 채널만 선택
+
+# Random Forest 모델 학습
+rf = RandomForestClassifier(n_estimators=100, random_state=42)
+rf.fit(X_train_mean, y_train)
+
+# 모델 평가
+train_score = rf.score(X_train_mean, y_train)
+test_score = rf.score(X_test_mean, y_test)
+
+print("\n모델 성능:")
+print(f"Train accuracy: {train_score:.4f}")
+print(f"Test accuracy: {test_score:.4f}")
+#########################  all data 로 분석석
+# df['unit'] 별로 df_seg를 정의하고 idx 순서대로 데이터를 추출
+all_data = []
+all_labels = []  # y_data를 위한 리스트
+df_unit_meta = pd.DataFrame()
+for unit in df['unit'].unique():
+    # 현재 unit의 데이터만 선택
+    df_unit = df[df['unit'] == unit].copy()
+    df_unit = df_unit.sort_values('idx')  # idx 순서대로 정렬
+    # x_temp = df_unit[[col for col in df_unit.columns if col.startswith(('raw_acc'))]].to_numpy()
+    x_temp = df_unit[[col for col in df_unit.columns if col.startswith(('raw_acc', 'raw_gyr', 'joint_pos', 'joint_angles'))]].to_numpy()
+    all_data.append(x_temp)
+    # 레이블 매핑 적용
+    original_label = df_unit['label'].unique()[0]
+    # mapped_label = label_mapping[original_label]
+    all_labels.append(original_label)    
+    # all_labels.append(df_unit['label'].unique()[0])
+    df_unit_meta = pd.concat([df_unit_meta, df_unit[['unit', 'label','f_list','seg_idx','idx','change_idx']]], axis=0)
+    # [index, column] 형식으로 numpy array 만들기
+    # df_meta 파일도 따로
+x_data = np.stack(all_data, axis=0)
+y_data = np.vstack(all_labels)
+print(x_data.shape)
+print(y_data.shape)
+
+# 새로운 레이블 분포 확인
+print("\n전체 데이터 새 레이블 분포:")
+unique_labels = np.unique(y_data)
+for label in sorted(unique_labels):
+    print(f"Label {label}: {np.sum(y_data == label)}")
+#################################################tsne 시작
+plot_tsne_by_channels(x_data, y_data, save_path=base_path+f'/combined_figure/Tsne frame_{seg_cut}')
+# 각 센서 타입별로 TSNE 수행
+for sensor_type, (start, end) in sensor_types.items():
+    channel_ranges = [(start, end)]
+    plot_tsne_by_channels(
+        x_data, 
+        y_data, 
+        channel_ranges=channel_ranges,
+        save_path=f"{base_path}/combined_figure/Tsne_{sensor_type}_frame_{seg_cut}"
+    )
+# # # tsne를 df['label]에 대해서 수행하고 싶어. 대신 샘플은 df['unit']
+# # tsne (라벨별별)
+# 센서 이름 생성
+feature_names = []
+for sensor in range(11):  # raw_acc
+    for axis in ['x', 'y', 'z']:
+        feature_names.append(f'acc_s{sensor+1}_{axis}')
+for sensor in range(11):  # raw_gyr
+    for axis in ['x', 'y', 'z']:
+        feature_names.append(f'gyr_s{sensor+1}_{axis}')
+for joint in range(16):  # joint_pos
+    for dim in ['x', 'y', 'z']:
+        feature_names.append(f'pos_j{joint+1}_{dim}')
+for joint in range(16):  # joint_angles
+    for q in ['w', 'x', 'y', 'z']:
+        feature_names.append(f'angle_j{joint+1}_{q}')
+
+# Feature Importance 분석
+channel_importance = rf.feature_importances_
+
+# 결과를 DataFrame으로 정리
+importance_df = pd.DataFrame({
+    'Channel': feature_names,
+    'Importance': channel_importance
+})
+
+# 중요도 순으로 정렬
+importance_df = importance_df.sort_values('Importance', ascending=False)
+
+
+# Feature Importance 시각화
+plt.figure(figsize=(12, 6))
+sns.barplot(data=importance_df.head(20), x='Importance', y='Channel')
+plt.title(f'Top 20 Most Important Channels (frame {seg_cut})')
+plt.tight_layout()
+plt.savefig(f"{save_path}/combined_figure/Top 20 Most Important Channels frame {seg_cut}_mean representative.png")
+plt.close()
+
+# 센서 타입별 중요도 분석
+sensor_types = {
+    'Accelerometer': (0, 33),
+    'Gyroscope': (33, 66),
+    'Joint Position': (66, 114),
+    'Joint Angles': (114, 178)
+}
+
+# 센서 타입별 평균/합계 중요도 계산
+type_importance = {}
+type_importance_sum = {}
+for sensor_type, (start, end) in sensor_types.items():
+    type_importance[sensor_type] = importance_df.iloc[start:end]['Importance'].mean()
+    type_importance_sum[sensor_type] = importance_df.iloc[start:end]['Importance'].sum()
+
+# 센서 타입별 중요도 시각화
+plt.figure(figsize=(10, 5))
+sns.barplot(x=list(type_importance.keys()), y=list(type_importance.values()))
+plt.title(f'Average Importance by Sensor Type (frame {seg_cut})')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig(f"{base_path}/combined_figure/Average Importance by Sensor Type frame {seg_cut}_mean representative.png")
+plt.close()
+
+plt.figure(figsize=(10, 5))
+sns.barplot(x=list(type_importance_sum.keys()), y=list(type_importance_sum.values()))
+plt.title(f'Sum Importance by Sensor Type (frame {seg_cut})')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig(f"{base_path}/combined_figure/Sum Importance by Sensor Type frame {seg_cut}_mean representative.png")
+plt.close()
