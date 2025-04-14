@@ -77,34 +77,34 @@ class SNUWaveGloveDataProcessor:
         """
         # 새로운 데이터프레임 생성
         expanded_df = df.copy()
-        
+        new_columns = {}        
         # raw_acc 처리 (11개 센서, 3축)
         for sensor in range(11):
             for axis in range(3):
                 col_name = f'raw_acc_s{sensor+1}_axis{axis+1}'
-                expanded_df[col_name] = df['raw_acc'].apply(lambda x: x[sensor][axis]).copy()
-        
+                new_columns[col_name] = df['raw_acc'].apply(lambda x: x[sensor][axis]).copy()
+       
         # raw_gyr 처리 (11개 센서, 3축)
         for sensor in range(11):
             for axis in range(3):
                 col_name = f'raw_gyr_s{sensor+1}_axis{axis+1}'
-                expanded_df[col_name] = df['raw_gyr'].apply(lambda x: x[sensor][axis]).copy()
+                new_columns[col_name] = df['raw_gyr'].apply(lambda x: x[sensor][axis]).copy()
         
         # joint_pos 처리 (16개 관절, 3차원)
         for joint in range(16):
             for dim in range(3):
                 col_name = f'joint_pos_j{joint+1}_dim{dim+1}'
-                expanded_df[col_name] = df['joint_pos'].apply(lambda x: x[joint][dim]).copy()
+                new_columns[col_name] = df['joint_pos'].apply(lambda x: x[joint][dim]).copy()
         
         # joint_angles 처리 (16개 관절, 4개 쿼터니언)
         for joint in range(16):
             for angle in range(4):
                 col_name = f'joint_angles_j{joint+1}_q{angle+1}'
-                expanded_df[col_name] = df['joint_angles'].apply(lambda x: x[joint][angle]).copy()
+                new_columns[col_name] = df['joint_angles'].apply(lambda x: x[joint][angle]).copy()
         
-        # 원본 리스트 컬럼 삭제
-        expanded_df = expanded_df.drop(['raw_acc', 'raw_gyr', 'joint_pos', 'joint_angles'], axis=1)
-        
+        # 모든 새로운 컬럼을 한 번에 추가
+        expanded_df = pd.concat([df, pd.DataFrame(new_columns)], axis=1)
+        expanded_df = expanded_df.drop(columns=['raw_acc', 'raw_gyr', 'joint_pos', 'joint_angles'])
         return expanded_df    
     def plot_sensor_data_comparison(df_seg_cat, label_num, seg_idx_num, seg_cut, fig_save_dir):
         """
@@ -415,7 +415,6 @@ class SNUWaveGloveDataProcessor:
         """
         시계열 데이터를 윈도우 크기로 자르고 오버랩을 적용하여 처리
         """
-        # f_list = [x for x in f_list if not x.find('figure')!=-1] # figure가 아닌 파일
         f_list = [x for x in f_list if x.find('log_seq_')!=-1] # log_seq_ 파일만 추출 (키보드실험)
         df_seg_cat = pd.DataFrame()
         processed_data = []  # 모든 파일의 데이터를 누적할 리스트
@@ -471,11 +470,25 @@ class SNUWaveGloveDataProcessor:
         num_labels = len(unique_labels)
         print(f"Total number of unique labels: {num_labels}")
         print("Labels:", unique_labels)
+        # anomaly_label 컬럼 추가 (기본값 0)
+        df['anomaly_label'] = 0
+        
+        # beforeGrip에서 afterGrip으로 바뀌는 시점 찾기
+        change_indices = df.index[(df['grip_time'].shift(1) == 'beforeGrip') & (df['grip_time'] == 'afterGrip')].tolist()
+        
+        # change_indices 위치를 1로 설정
+        df.loc[change_indices, 'anomaly_label'] = 1
+        
+        # 결과 확인
+        print("\nAnomaly Label 분포:")
+        print(df['anomaly_label'].value_counts())        
         # idx별로 label을 그리는 그래프
         plt.figure(figsize=(10, 6))
         plt.scatter(df[df['grip_time']=='beforeGrip']['idx'], df[df['grip_time']=='beforeGrip']['label'], marker='o', color='blue', alpha=0.5)
         plt.scatter(df[df['grip_time']=='afterGrip']['idx'], df[df['grip_time']=='afterGrip']['label'], marker='x', color='red', alpha=0.5)
         plt.title(f'{f_list_name} idx-label (beforeGrip:blue, afterGrip:red)')
+        plt.scatter(df[df['anomaly_label']==1]['idx'], df[df['anomaly_label']==1]['label'], marker='*', color='green', s=100, label='Anomaly Point')
+        plt.title(f'{f_list_name} idx-label (beforeGrip:blue, afterGrip:red, Anomaly:green)')        
         plt.xlabel('idx')
         plt.ylabel('label')
         plt.grid(True)
@@ -486,132 +499,9 @@ class SNUWaveGloveDataProcessor:
         for label_num in unique_labels:
             df_seg = SNUWaveGloveDataProcessor.extract_segments(df, seg_cut, label_num)
             df_seg_cat = pd.concat([df_seg_cat, df_seg], ignore_index=True)
-        aa = df_seg_cat.groupby(['label','seg_idx'])['change_idx'].value_counts()
-        # 모든 label과 segment에 대해 그래프 생성
-        for label_num in unique_labels:  # label 1부터 12까지
-            # 현재 label에 대한 segment 개수 확인
-            seg_indices = df_seg_cat[df_seg_cat['label'] == label_num]['seg_idx'].unique()
-            
-            # for seg_idx_num in seg_indices:
-            #     SNUWaveGloveDataProcessor.plot_sensor_data_comparison(
-            #         df_seg_cat, 
-            #         label_num=label_num, 
-            #         seg_idx_num=seg_idx_num, 
-            #         seg_cut=seg_cut, 
-            #         fig_save_dir=file_exp
-            #     )
-            #     plt.close('all')  # 메모리 관리를 위해 그래프 객체 정리
-        # df_seg_cat의 raw_acc, raw_gyr, joint_pos, joint_angles 데이터를 모두 더해서 하나의 데이터로 만들기기
-        df_seg_cat_expanded =SNUWaveGloveDataProcessor.expand_sensor_data(df_seg_cat)
-        # raw_acc, raw_gyr, joint_pos, joint_angles로 시작하는 컬럼만 필터링
-        sensor_cols = [col for col in df_seg_cat_expanded.columns if col.startswith(('raw_acc', 'raw_gyr', 'joint_pos', 'joint_angles'))]
-        x_data = df_seg_cat_expanded[sensor_cols]  # 필터링된 센서 데이터만 로드
-        y_data = df_seg_cat_expanded['label']  # 레이블 데이터 로드
-        # 시계열 데이터 처리 tsne
 
-        # numpy 배열로 변환
-        stacked_data = np.array(x_data)
-        # 메타데이터를 DataFrame으로 변환
-        metadata_df = df_seg_cat_expanded
-        
-        print(f"Processed time domain data shape: {stacked_data.shape}")
-        print(f"Metadata DataFrame shape: {metadata_df.shape}")
-        
+        return df, df_seg_cat
 
-        return stacked_data, metadata_df
-
-    # @staticmethod
-    # def process_files_with_origin_time_domain(local_dir, f_list, data_type, seg_cut = 20):
-    #     """
-    #     시계열 데이터를 윈도우 크기로 자르고 오버랩을 적용하여 처리
-    #     """
-    #     f_list = [x for x in f_list if not x.find('figure')!=-1]
-        
-    #     df_seg_cat = pd.DataFrame()
-    #     # Load the new JSON file
-    #     for f_list_name in f_list:
-    #         file_exp = local_dir+f_list_name
-    #         file_path = file_exp+"/log_seq.json"
-    #         with open(file_path, "r", encoding="utf-8") as f:
-    #             data = json.load(f)
-
-    #     # Extracting relevant data and merging beforeGrip and afterGrip
-    #         processed_data = []
-    #         for entry in data:
-    #             label = entry["label"]
-
-    #             for grip_time, grip_data in [("beforeGrip", entry["beforeGrip"]), ("afterGrip", entry["afterGrip"])]:
-    #                 for grip_entry in grip_data:
-    #                     bbox = grip_entry["bbox"]
-    #                     raw_acc = grip_entry["raw_acc"]  # list 11, 3x1
-    #                     raw_gyr = grip_entry["raw_gyr"] # list 11, 3x1
-    #                     joint_pos = grip_entry["joint_pos"] # list 16, 3x1
-    #                     joint_angles = grip_entry["joint_angles"] # list 11, 4x1
-                        
-    #                     processed_data.append({
-    #                         "label": label,
-    #                         "grip_time": grip_time,
-    #                         "bbox": bbox,
-    #                         "raw_acc": raw_acc,
-    #                         "raw_gyr": raw_gyr,
-    #                         "joint_pos": joint_pos,
-    #                         "joint_angles": joint_angles,
-    #                         "f_list": f_list_name
-    #                         })
-
-    #         # Convert to DataFrame for better analysis
-    #         df = pd.DataFrame(processed_data)    
-    #         df['idx'] = df.index  # idx 열 추가
-    #         ## timestamt(index별 라벨) (before after)
-
-    #         # idx별로 label을 그리는 그래프
-    #         # plt.figure(figsize=(10, 6))
-    #         # plt.scatter(df[df['grip_time']=='beforeGrip']['idx'], df[df['grip_time']=='beforeGrip']['label'], marker='o', color='blue', alpha=0.5)
-    #         # plt.scatter(df[df['grip_time']=='afterGrip']['idx'], df[df['grip_time']=='afterGrip']['label'], marker='x', color='red', alpha=0.5)
-    #         # plt.title(f'{f_list_name} idx-label (beforeGrip:blue, afterGrip:red)')
-    #         # plt.xlabel('idx')
-    #         # plt.ylabel('label')
-    #         # plt.grid(True)
-    #         # plt.savefig(f'{local_dir}/combined_figure/{f_list_name} idx-label.png',bbox_inches='tight')
-    #         # plt.close()
-    #     # 모든 label과 segment에 대해 그래프 생성
-
-    #         for label_num in range(1,13):
-    #             df_seg = SNUWaveGloveDataProcessor.extract_segments(df, seg_cut, label_num)
-    #             df_seg_cat = pd.concat([df_seg_cat, df_seg], ignore_index=True)
-    #         aa = df_seg_cat.groupby(['label','seg_idx'])['change_idx'].value_counts()
-    #         # 모든 label과 segment에 대해 그래프 생성
-    #         for label_num in range(1,13):  # label 1부터 12까지
-    #             # 현재 label에 대한 segment 개수 확인
-    #             seg_indices = df_seg_cat[df_seg_cat['label'] == label_num]['seg_idx'].unique()
-                
-    #             # for seg_idx_num in seg_indices:
-    #             #     SNUWaveGloveDataProcessor.plot_sensor_data_comparison(
-    #             #         df_seg_cat, 
-    #             #         label_num=label_num, 
-    #             #         seg_idx_num=seg_idx_num, 
-    #             #         seg_cut=seg_cut, 
-    #             #         fig_save_dir=file_exp
-    #             #     )
-    #             #     plt.close('all')  # 메모리 관리를 위해 그래프 객체 정리
-    #     # df_seg_cat의 raw_acc, raw_gyr, joint_pos, joint_angles 데이터를 모두 더해서 하나의 데이터로 만들기기
-    #     df_seg_cat_expanded =SNUWaveGloveDataProcessor.expand_sensor_data(df_seg_cat)
-    #     # raw_acc, raw_gyr, joint_pos, joint_angles로 시작하는 컬럼만 필터링
-    #     sensor_cols = [col for col in df_seg_cat_expanded.columns if col.startswith(('raw_acc', 'raw_gyr', 'joint_pos', 'joint_angles'))]
-    #     x_data = df_seg_cat_expanded[sensor_cols]  # 필터링된 센서 데이터만 로드
-    #     y_data = df_seg_cat_expanded['label']  # 레이블 데이터 로드
-    #     # 시계열 데이터 처리 tsne
-
-    #     # numpy 배열로 변환
-    #     stacked_data = np.array(x_data)
-    #     # 메타데이터를 DataFrame으로 변환
-    #     metadata_df = df_seg_cat_expanded
-        
-    #     print(f"Processed time domain data shape: {stacked_data.shape}")
-    #     print(f"Metadata DataFrame shape: {metadata_df.shape}")
-        
-
-    #     return stacked_data, metadata_df
     @staticmethod    
     def process_files_with_origin_freq_domain(file_list, data_dir, data_type, window_size=1024, overlap=128, sampling_rate=25600):
         """

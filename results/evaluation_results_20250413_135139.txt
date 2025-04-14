@@ -1,0 +1,93 @@
+=== Model Information ===
+Model Type: CNNAutoencoder
+Input Size: 178
+Sequence Length: 10
+Number of Parameters: 103883
+
+=== Model Architecture ===
+CNNAutoencoder(
+  (encoder): Sequential(
+    (0): AttentionConvBlock(
+      (attention): AttentionLayer(
+        (attention): Sequential(
+          (0): Linear(in_features=178, out_features=89, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=89, out_features=1, bias=True)
+          (3): Sigmoid()
+        )
+      )
+      (conv): Conv2d(178, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+      (bn): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU()
+    )
+    (1): AttentionConvBlock(
+      (attention): AttentionLayer(
+        (attention): Sequential(
+          (0): Linear(in_features=64, out_features=32, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=32, out_features=1, bias=True)
+          (3): Sigmoid()
+        )
+      )
+      (conv): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+      (bn): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU()
+    )
+    (2): AttentionConvBlock(
+      (attention): AttentionLayer(
+        (attention): Sequential(
+          (0): Linear(in_features=32, out_features=16, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=16, out_features=1, bias=True)
+          (3): Sigmoid()
+        )
+      )
+      (conv): Conv2d(32, 16, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+      (bn): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU()
+    )
+  )
+  (decoder): Sequential(
+    (0): AttentionConvBlock(
+      (attention): AttentionLayer(
+        (attention): Sequential(
+          (0): Linear(in_features=16, out_features=8, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=8, out_features=1, bias=True)
+          (3): Sigmoid()
+        )
+      )
+      (conv): Conv2d(16, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+      (bn): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU()
+    )
+    (1): AttentionConvBlock(
+      (attention): AttentionLayer(
+        (attention): Sequential(
+          (0): Linear(in_features=32, out_features=16, bias=True)
+          (1): ReLU()
+          (2): Linear(in_features=16, out_features=1, bias=True)
+          (3): Sigmoid()
+        )
+      )
+      (conv): Conv2d(32, 64, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+      (bn): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU()
+    )
+    (2): ConvTranspose2d(64, 178, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  )
+)
+
+=== Evaluation Metrics ===
+Accuracy: 0.8123
+Precision: 0.0492
+Recall: 0.5702
+F1 Score: 0.0906
+ROC-AUC: 0.6933
+
+=== Confusion Matrix ===
+[[21993  4947]
+ [  193   256]]
+
+=== Classification Report ===
+{'0.0': {'precision': 0.9913008203371495, 'recall': 0.816369710467706, 'f1-score': 0.895371086593657, 'support': 26940}, '1.0': {'precision': 0.049202383240438206, 'recall': 0.5701559020044543, 'f1-score': 0.0905874026893135, 'support': 449}, 'accuracy': 0.8123334185256855, 'macro avg': {'precision': 0.5202516017887938, 'recall': 0.6932628062360802, 'f1-score': 0.4929792446414853, 'support': 27389}, 'weighted avg': {'precision': 0.975856583663433, 'recall': 0.8123334185256855, 'f1-score': 0.8821779114476842, 'support': 27389}}
